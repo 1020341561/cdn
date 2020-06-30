@@ -1,0 +1,76 @@
+.rank_info {
+    position: relative;
+    float: left;
+    display: block;
+    overflow: hidden;
+    width: 33.333333%;
+    padding: 0.25rem;
+    margin-top: 0.5rem;
+    background: #fff;
+}
+
+.list_info {
+    padding: 0.4rem;
+}
+
+.pannel_head {
+    margin: 0.25rem 0;
+    line-height: 0.625rem;
+}
+
+.pull_right {
+    float: right !important;
+}
+
+.pannel_head .title {
+    margin: 0;
+    color: #111;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 0.45rem;
+    line-height: 0.6rem;
+}
+
+a, button {
+    text-decoration: none;
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.more_i {
+    font-size: 0.25rem;
+    vertical-align: top;
+    padding-left: 0.1rem;
+}
+
+.part_num1 {
+    background-color: #ff0d29!important;
+}
+
+.part_num2 {
+    background-color: #ff920b!important;
+}
+
+.part_num3 {
+    background-color: #ffc600!important;
+}
+
+.part_nums {
+    position: relative;
+    display: block;
+    float: left;
+    overflow: hidden;
+    top: 0px;
+    font-size: 0.3rem;
+    font-weight: 700;
+    border-radius: 4px 0 4px 4px;
+    line-height: 0.5rem;
+    margin-right: 0.25rem;
+    color: #fff;
+    text-align: center;
+    background-color: #999;
+    width: 0.5rem;
+    height: 0.5rem;
+}

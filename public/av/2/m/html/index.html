@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<title>{{ .Site.SiteTitle }}</title>
+<meta name="keywords" content="{{ .Site.SiteKeywords }}" />
+<meta name="description" content="{{ .Site.SiteDescription }}" />
+
+<meta name="applicable-device" content="pc,mobile" />
+<meta name="robots" content="index,follow" />
+<meta http-equiv="Cache-Control" content="no-transform" /> 
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<link rel="alternate" media="only screen and (max-width: 640px)" href="https://{{.Site.SiteUrl}}/" />
+<link rel="alternate" media="handheld" href="https://{{.Site.SiteUrl}}/" />
+<meta http-equiv="mobile-agent" content="format=html5; url=https://{{.Site.SiteUrl}}/" />
+<meta name="mobile-agent" content="format=[wml|xhtml|html5]; url=https://{{.Site.SiteUrl}}/"/>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="apple-mobile-web-app-title" content="{{ .Site.SiteTitle }}" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-itunes-app" content="app-id=5697068241111" />
+
+<meta name="apple-touch-fullscreen" content="yes" />
+
+<meta name="renderer" content="webkit" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="MobileOptimized" content="320" />
+<meta name="screen-orientation" content="portrait" />
+<meta name="x5-orientation" content="portrait" />
+<meta name="full-screen" content="yes" />
+<meta name="format-detection" content="telphone=no" />
+
+<link href="/favicon.ico" rel="shortcut icon" type="image/ico" />
+<link href="/favicon.ico" rel="icon" />
+<link href="/favicon.ico" rel="Bookmark" />
+<link rel="apple-touch-icon" href="/logo.png" />
+
+		<link rel="stylesheet" href="{{.StylePath}}/css/swiper.min.css">
+		<link rel="stylesheet" href="{{.StylePath}}/css/Joe-red.css">
+		<script type="text/javascript" src="{{.StylePath}}/js/jquery.min.js"></script>
+		<script type="text/javascript" src="{{.StylePath}}/js/leeleo.js"></script>
+		<script type="text/javascript" src="{{.StylePath}}/js/font_534891_k48jbptqzuayvi.js"></script>
+		<script src="{{.StylePath}}/js/home.js"></script>
+		<link href="{{.StylePath}}/css/apppp.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<div class="channel"> 
+			{{include "style2/m/header.html" .}}
+			<section class="mod ">
+				<div class="mod-head clearfix">
+					<div class="mod-head-title">
+						<span class="mod-head-name">
+							<svg class="icon" aria-hidden="true">
+								<use xlink:href="#icon-zhibo"></use>
+							</svg>
+							{9CCMS-Index-Type:1}
+						</span>
+					</div>
+					<a href="/?m=video_list*1*1" class="change" tapmode="" onclick="showDefault('loading')">
+						<span class="iconfont icon-location"></span>
+						&nbsp查看更多&nbsp
+						<span class="iconfont icon-right"></span>
+					</a>
+				</div>
+				<div class="mod-main clearfix">
+					<div class="mod-row">
+						<ul class="video-list video-film-list clearfix">
+							{9CCMS-Index:Type=1,Count=9}
+							<li class="video-item" tapmode="" onclick="showDefault('loading')">
+								<a class="video-link" href="{9CCMS-Index:DUrl}" title="{9CCMS-Index:Name}">
+									<div class="v-pic">
+										<img data-src="{9CCMS-Index:Pic}" class="_item-pic _item-lazy" alt="{9CCMS-Index:Name}" src="{9CCMS-Index:Pic}">
+										<?php if(rand(0 ,1)){ ?>
+										<div class="v-tips">推荐</div>
+										<?php } ?>
+										<a href="{9CCMS-Index:DUrl}" title="{9CCMS-Index:Name}" class="v-playBtn"><i></i></a>
+									</div>
+									<div class="video-con">
+										<h2 class="video-con-tit ellipsis-1">{9CCMS-Index:Name}</h2>
+									</div>
+								</a>
+							</li>
+							{/9CCMS-Index}
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="mod ">
+				<div class="mod-head clearfix">
+					<div class="mod-head-title">
+						<span class="mod-head-name">
+							<svg class="icon" aria-hidden="true">
+								<use xlink:href="#icon-zhibo"></use>
+							</svg>
+							{9CCMS-Index-Type:4}
+						</span>
+					</div>
+					<a href="/?m=video_list*4*1" class="change" tapmode="" onclick="showDefault('loading')">
+						<span class="iconfont icon-location"></span>
+						&nbsp查看更多&nbsp
+						<span class="iconfont icon-right"></span>
+					</a>
+				</div>
+				<div class="mod-main clearfix">
+					<div class="mod-row">
+						<ul class="video-list video-film-list clearfix">
+							{9CCMS-Index:Type=4,Count=9}
+							<li class="video-item" tapmode="" onclick="showDefault('loading')">
+								<a class="video-link" href="{9CCMS-Index:DUrl}" title="{9CCMS-Index:Name}">
+									<div class="v-pic">
+										<img data-src="{9CCMS-Index:Pic}" class="_item-pic _item-lazy" alt="{9CCMS-Index:Name}" src="{9CCMS-Index:Pic}">
+										<?php if(rand(0 ,1)){ ?>
+										<div class="v-tips">推荐</div>
+										<?php } ?>
+										<a href="{9CCMS-Index:DUrl}" title="{9CCMS-Index:Name}" class="v-playBtn"><i></i></a>
+									</div>
+									<div class="video-con">
+										<h2 class="video-con-tit ellipsis-1">{9CCMS-Index:Name}</h2>
+									</div>
+								</a>
+							</li>
+							{/9CCMS-Index}
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="mod ">
+				<div class="mod-head clearfix">
+					<div class="mod-head-title">
+						<span class="mod-head-name">
+							<svg class="icon" aria-hidden="true">
+								<use xlink:href="#icon-zhibo"></use>
+							</svg>
+							{9CCMS-Index-Type:6}
+						</span>
+					</div>
+					<a href="/?m=video_list*6*1" class="change" tapmode="" onclick="showDefault('loading')">
+						<span class="iconfont icon-location"></span>
+						&nbsp查看更多&nbsp
+						<span class="iconfont icon-right"></span>
+					</a>
+				</div>
+				<div class="mod-main clearfix">
+					<div class="mod-row">
+						<ul class="video-list video-film-list clearfix">
+							{9CCMS-Index:Type=6,Count=9}
+							<li class="video-item" tapmode="" onclick="showDefault('loading')">
+								<a class="video-link" href="{9CCMS-Index:DUrl}" title="{9CCMS-Index:Name}">
+									<div class="v-pic">
+										<img data-src="{9CCMS-Index:Pic}" class="_item-pic _item-lazy" alt="{9CCMS-Index:Name}" src="{9CCMS-Index:Pic}">
+										<?php if(rand(0 ,1)){ ?>
+										<div class="v-tips">推荐</div>
+										<?php } ?>
+										<a href="{9CCMS-Index:DUrl}" title="{9CCMS-Index:Name}" class="v-playBtn"><i></i></a>
+									</div>
+									<div class="video-con">
+										<h2 class="video-con-tit ellipsis-1">{9CCMS-Index:Name}</h2>
+									</div>
+								</a>
+							</li>
+							{/9CCMS-Index}
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="mod ">
+				<div class="mod-head clearfix">
+					<div class="mod-head-title">
+						<span class="mod-head-name">
+							<svg class="icon" aria-hidden="true">
+								<use xlink:href="#icon-zhibo"></use>
+							</svg>
+							{9CCMS-Index-Type:14}
+						</span>
+					</div>
+					<a href="/?m=video_list*14*1" class="change" tapmode="" onclick="showDefault('loading')">
+						<span class="iconfont icon-location"></span>
+						&nbsp查看更多&nbsp
+						<span class="iconfont icon-right"></span>
+					</a>
+				</div>
+				<div class="mod-main clearfix">
+					<div class="mod-row">
+						<ul class="video-list video-film-list clearfix">
+							{9CCMS-Index:Type=14,Count=9}
+							<li class="video-item" tapmode="" onclick="showDefault('loading')">
+								<a class="video-link" href="{9CCMS-Index:DUrl}" title="{9CCMS-Index:Name}">
+									<div class="v-pic">
+										<img data-src="{9CCMS-Index:Pic}" class="_item-pic _item-lazy" alt="{9CCMS-Index:Name}" src="{9CCMS-Index:Pic}">
+										<?php if(rand(0 ,1)){ ?>
+										<div class="v-tips">推荐</div>
+										<?php } ?>
+										<a href="{9CCMS-Index:DUrl}" title="{9CCMS-Index:Name}" class="v-playBtn"><i></i></a>
+									</div>
+									<div class="video-con">
+										<h2 class="video-con-tit ellipsis-1">{9CCMS-Index:Name}</h2>
+									</div>
+								</a>
+							</li>
+							{/9CCMS-Index}
+						</ul>
+					</div>
+				</div>
+			</section>
+		</div>
+		<section class="mod ">
+			<div class="mod-head clearfix">
+				<div class="mod-head-title"> <span class="mod-head-name">
+						<svg class="icon" aria-hidden="true">
+							<use xlink:href="#icon-wodezhuifan"></use>
+						</svg>
+						友情链接</span> </div>
+				<a class="change"><span class="iconfont icon-location"></span>&nbsp;可以左右滑动</a>
+			</div>
+			<div class="mod-main clearfix">
+				<div class="mod-row link-list">
+					<ul class="swiper-wrapper clearfix">
+						{9CCMS-IeUrl}
+						<li class="swiper-slide"><a href="{9CCMS-IeUrl:Url}" target="_blank">{9CCMS-IeUrl:Name}</a></li>
+						{/9CCMS-IeUrl}
+					</ul>
+				</div>
+			</div>
+		</section>
+		<div id="_js_goTop" class="goTop" onclick="goTop()"><i class="iconfont icon-fold"></i></div>
+		{{include "style2/m/footer.html" .}}
+	</body>
+</html>

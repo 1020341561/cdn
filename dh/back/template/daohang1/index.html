@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<style>
+html.pc,body.pc {
+    background: url({{$.site.TemplateID}}/images/bg3.jpg?0618) no-repeat;
+    background-size: 100% auto;
+}
+</style>
+<html lang="zh-cn">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="force-rendering" content="webkit" />
+<title>{{$.site.SiteTitle | AscII}}</title>
+<meta name="keywords" content="{{$.site.SiteKeywords | AscII}}">
+<meta name="description" content="{{$.site.SiteDescription | AscII}}">
+
+<meta name="copyright" content="{{$.site.Title | AscII}} https://{{$.r.Request.Host}}">
+<meta name="generator" content="{{$.site.Title | AscII}} https://{{$.r.Request.Host}}" />
+<meta name="author" content="{{$.site.Title | AscII}} https://{{$.r.Request.Host}}" />
+
+<meta name="application-name" content="{{$.site.SiteTitle | AscII}}" />
+<meta name="msapplication-tooltip" content="{{$.site.SiteTitle | AscII}}" />
+
+
+
+<meta name="applicable-device" content="pc,mobile">
+<meta name="robots" content="index,follow">
+<meta name="revisit-after" content="1 days">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+<meta name=format-detection content="telephone=no, email=no"/>
+<meta name="mobile-agent" content="format=[wml|xhtml|html5]; url=https://{{$.r.Request.Host}}{{$.r.Request.RequestURI}}">
+<meta http-equiv="mobile-agent" content="format=html5; url=https://{{$.r.Request.Host}}{{$.r.Request.RequestURI}}">
+<link rel="canonical" href="https://{{$.r.Request.Host}}" >
+<link rel="alternate" media="only screen and (max-width: 640px)" href="https://{{$.r.Request.Host}}{{$.r.Request.RequestURI}}">
+<link rel="alternate" media="handheld" href="https://{{$.r.Request.Host}}{{$.r.Request.RequestURI}}">
+<link rel="home" href="https://{{$.r.Request.Host}}">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+<meta name="theme-color" content="#E1E1E1">
+
+<meta name="application-name" content="{{$.site.Title | AscII}}">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="{{$.site.Title | AscII}}">
+<!--打开独立模式 隐藏Safari用户界面组件-->
+<!--<meta name="apple-mobile-web-app-capable" content="yes">-->
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="apple-touch-icon" data-n-head="true" href="//{{$.r.Request.Host}}/cav.ooo-180x180.png" sizes="180x180">
+<link rel="apple-touch-icon-precomposed" href="//{{$.r.Request.Host}}/cav.ooo-180x180.png">
+<link rel="apple-touch-startup-image" href="//{{$.r.Request.Host}}/cav.ooo-splash.png" sizes="1125x2436">
+<!--<meta name="apple-itunes-app" content="app-id=0000000000">-->
+<meta name="apple-touch-fullscreen" content="yes">
+
+<meta name="renderer" content="webkit">
+<meta name="HandheldFriendly" content="true">
+<meta name="MobileOptimized" content="320">
+<meta name="screen-orientation" content="portrait">
+<meta name="x5-orientation" content="portrait">
+<meta name="full-screen" content="yes">
+<meta name="browsermode" content="application">
+
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://{{$.r.Request.Host}}{{$.r.Request.RequestURI}}" />
+<meta data-n-head="true" data-hid="og:site_name" name="og:site_name" property="og:site_name" content="{{$.site.Title | AscII}}" />
+<meta data-react-helmet="true" property="og:title" content="{{$.site.SiteTitle | AscII}}" />
+<meta data-react-helmet="true" property="og:description" content="{{$.site.SiteDescription | AscII}}" />
+
+<meta property="og:image:type" content="image/png">
+<meta data-react-helmet="true" property="og:image" content="//{{$.r.Request.Host}}/cav.ooo-180x180.png" />
+<meta data-react-helmet="true" property="og:image:width" content="180" />
+<meta data-react-helmet="true" property="og:image:height" content="180" />
+
+<meta data-react-helmet="true" name="twitter:card" content="summary_large_image" />
+<meta data-react-helmet="true" name="twitter:site" content="https://{{$.r.Request.Host}}" />
+<meta data-react-helmet="true" name="twitter:title" content="{{$.site.Title | AscII}}" />
+<meta data-react-helmet="true" name="twitter:description" content="{{$.site.SiteDescription | AscII}}" />
+<meta data-react-helmet="true" name="twitter:image" content="//{{$.r.Request.Host}}/cav.ooo-180x180.png" />
+<meta data-react-helmet="true" name="twitter:image:alt" content="{{$.site.SiteTitle | AscII}}"/>
+
+<link href="//{{$.r.Request.Host}}/cav.ooo-favicon.ico" rel="shortcut icon" type="image/x-icon" data-n-head="true">
+<link href="//{{$.r.Request.Host}}/cav.ooo-favicon.ico" rel="icon" data-n-head="true">
+<link href="//{{$.r.Request.Host}}/cav.ooo-favicon.ico" rel="Bookmark" data-n-head="true">
+
+<link rel="stylesheet" href="{{$.site.TemplateID}}/iconfont.css?_v=1.23">
+<link rel="stylesheet" href="{{$.site.TemplateID}}/common.css?_v=1.23">
+<link rel="stylesheet" href="{{$.site.TemplateID}}/swiper.min.css?_v=1.23">
+<script src="{{$.site.TemplateID}}/common.js?_v=1.23"></script>
+<script src="{{$.site.TemplateID}}/jquery.min.js?_v=1.23"></script>
+<script src="{{$.site.TemplateID}}/swiper.min.js?_v=1.23"></script>
+<script src="{{$.site.TemplateID}}/jquery.qrcode.min.js?_v=1.23"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/avhot/cdn@latest/app.cav.ooo/font-awesome.min.css?0506" id="font-awesome-css" media="all" alt="footer icon">
+</head>
+
+<body class="{{if eq $.mobile 0}}pc{{end}}">
+<style type="text/css">
+a{color:#333}a:hover,a:active,a:focus{color:#333}.my-pagination .swiper-pagination-bullet{text-align:center;border-radius:0;opacity:1}.my-pagination ul{display:-webkit-box}.my-pagination li{display:block;background:#fff;overflow:hidden;box-flex:1;-moz-box-flex:1;-webkit-box-flex:1;height:40px;line-height:40px;position:relative;font-size:15px}.my-pagination li:after{position:absolute;top:auto;right:auto;bottom:0;left:0;z-index:1;display:block;width:100%;height:1px;content:'';background-color:#dcdcdc;-webkit-transform-origin:50% 100%;transform-origin:50% 100%;-webkit-transform:scaleY(.5)}.my-pagination .swiper-pagination-bullet-active{color:#f92020}.my-pagination .swiper-pagination-bullet-active:after{opacity:1;background-color:#f92020;height:4px}.my-pagination{width:100%;overflow-x:auto}.my-pagination ul li{min-width:63px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;padding:0 5px}.swiper-slide{padding-top:15px}.swiper-slide ul{width:100%;display:flex;flex-wrap:wrap}.swiper-slide ul li{width:20%;display:flex;justify-content:center;margin-bottom:15px}.swiper-slide ul li a{width:80%}.swiper-slide ul li .img-wrap{width:100%}.swiper-slide ul li .img-wrap img{width:100%;border-radius:.2rem;border:1px solid #eee}.page-index .list-wrap .item-wrap .img-wrap img{border-radius:.2rem;border:1px solid #eee}.swiper-slide ul li .name{width:100%;text-align:center;font-size:12px;margin-top:6px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.swiper-containers ul li .btn-wrap{flex-shrink:0;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;background:#f8f8f8;color:#f92020;font-size:.24rem;width:1.2rem;height:.6rem;border-radius:.7rem;margin:.1rem auto 0}
+ 
+/*public_header*/
+.public-header {background-color: #ff5a5e;position: fixed;top: 0;left: 0;width: 100%;z-index: 9999;}.public-header-inner {max-width: 1200px;height: 60px;display: flex;margin: 0 auto;justify-content: center;}.public-logo-link,.public-header-link {padding: 0;margin: 0;text-decoration: none;}.public-header-logo {padding: 5px 10px;width: auto;height: 50px;overflow: hidden;}.public-header-logo img {width: auto;height: 100%;}.public-header-list {display: flex;align-items: center;padding: 0 10px;color: #fff;cursor: pointer;height: 100%;}.public-header-list:hover {color: #000;background-color: #fff;}.public-header-list .iconBox {background-repeat: no-repeat;width: 30px;height: 25px;}.public-header-list .text {margin-left: 5px;}@media (max-width: 767px) {.public-visible-xs {display: block;}.public-hidden-xs {display: none;}.public-header {font-size: 12px;}.public-header-link {flex: 1;}.public-header-list {padding: 0;display: flex;justify-content: center;}.public-header-list .text {margin-left: 0;}}
+</style>
+<div class="public-header">
+    <div class="public-header-inner">
+        <a class="public-header-link" href="https://www.cav.one/?public_header">
+            <div class="public-header-list">
+                <div class="iconBox" style="background-image: url(&quot;https://cdn.jsdelivr.net/gh/avhot/cdn@latest/www.cav.ooo/public/public_header.png?v=123456789&quot;); background-position: -15px -21px;"></div>
+                <div class="text">色情导航</div>
+            </div>
+        </a>
+        <a class="public-header-link" href="https://app.cav.dog/?public_header">
+            <div class="public-header-list">
+                <div class="iconBox" style="background-image: url(&quot;https://cdn.jsdelivr.net/gh/avhot/cdn@latest/www.cav.ooo/public/public_header.png?v=123456789&quot;); background-position: -100px -21px;"></div>
+                <div class="text">成人APP</div>
+            </div>
+        </a>
+    </div>
+</div>
+    <div class="main-wrap page-index" style="margin-top:60px">
+        <div class="main-body">
+            {{getTemplate "ad-daohang1-index1"}}
+            <div class="main-content" style="padding-top:0;overflow:hidden;">
+                <!-- 公告 -->
+                <div class="warn-wrap">
+                      {{getTemplate "ad-daohang1-index2"}}
+                </div>
+                <div class="my-pagination">
+                    <ul class="my-pagination-ul"></ul>
+                </div>
+                <div class="swiper-containers" style="">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <ul>
+                                {{$appHome:= getHome 20}}
+                                {{range $key2, $value2 := $appHome}}
+                                <li>
+                                    <a href="javascript:void(0);" class="item-wrap">
+                                        <div class="img-wrap" onclick="toinfo('{{$value2.CodeUrl}}')">
+                                            <img src="{{$value2.Icon}}" alt="{{$value2.Name | AscII}}">
+                                        </div>
+                                        <div class="name" onclick="toinfo('{{$value2.CodeUrl}}')">{{$value2.Name | AscII}}</div>
+                                        <div class="btn-wrap btn-download" data-id="{{$value2.ID}}" data-ioslink="{{$value2.Ios}}" data-androidlink="{{$value2.Apk}}">{{$value2.DownText}}
+                                        </div>
+                                     </a>
+                                </li>
+                                {{end}}
+                             </ul>
+                             <div style="text-align:center;">
+                                 <a href="{{getCategoryUrl $.site "chengrenshipin"}}" style="display: inline-block;background-color:#f92020;font-size:.24rem;color:#FFFFFF;padding:0 30px;border-radius:.7rem;line-height:.6rem;">更多下载</a>
+                             </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <ul>
+                                {{$appinfo:= getAppInfoByName "成人视频" 20}}
+                                     {{range $key2, $value2 := $appinfo}}
+                                     <li>
+                                       <a href="javascript:void(0);" class="item-wrap">
+                                        <div class="img-wrap" onclick="toinfo('{{$value2.CodeUrl}}')">
+                                            <img src="{{$value2.Icon}}" alt="{{$value2.Name | AscII}}">
+                                        </div>
+                                        <div class="name" onclick="toinfo('{{$value2.CodeUrl}}')">{{$value2.Name | AscII}}</div>
+                                        <div class="btn-wrap btn-download" data-id="{{$value2.ID}}" data-ioslink="{{$value2.Ios}}" data-androidlink="{{$value2.Apk}}">
+                                            {{$value2.DownText}}
+                                        </div>
+                                     </a>
+                                     </li>
+                                {{end}}
+                            </ul>
+                            <div style="text-align:center;">
+                                 <a href="{{getCategoryUrl $.site "成人视频"}}" style="display: inline-block;background-color:#f92020;font-size:.24rem;color:#FFFFFF;padding:0 30px;border-radius:.7rem;line-height:.6rem;">更多下载</a>
+                             </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <ul>
+                                    {{$appinfo:= getAppInfoByName "成人直播" 20}}
+                                     {{range $key2, $value2 := $appinfo}}
+                                     <li>
+                                       <a href="javascript:void(0);" class="item-wrap">
+                                        <div class="img-wrap" onclick="toinfo('{{$value2.CodeUrl}}')">
+                                            <img src="{{$value2.Icon}}" alt="{{$value2.Name | AscII}}">
+                                        </div>
+                                        <div class="name" onclick="toinfo('{{$value2.CodeUrl}}')">{{$value2.Name | AscII}}</div>
+                                        <div class="btn-wrap btn-download" data-id="{{$value2.ID}}" data-ioslink="{{$value2.Ios}}" data-androidlink="{{$value2.Apk}}">
+                                            {{$value2.DownText}}
+                                        </div>
+                                     </a>
+                                     </li>
+                                    {{end}}
+                            </ul>
+                            <div style="text-align:center;">
+                                 <a href="{{getCategoryUrl $.site "成人直播"}}" style="display: inline-block;background-color:#f92020;font-size:.24rem;color:#FFFFFF;padding:0 30px;border-radius:.7rem;line-height:.6rem;">更多下载</a>
+                             </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <ul>
+                                    {{$appinfo:= getAppInfoByName "在线电影" 20}}
+                                     {{range $key2, $value2 := $appinfo}}
+                                     <li>
+                                       <a href="javascript:void(0);" class="item-wrap">
+                                        <div class="img-wrap" onclick="toinfo('{{$value2.CodeUrl}}')">
+                                            <img src="{{$value2.Icon}}" alt="{{$value2.Name | AscII}}">
+                                        </div>
+                                        <div class="name" onclick="toinfo('{{$value2.CodeUrl}}')">{{$value2.Name | AscII}}</div>
+                                        <div class="btn-wrap btn-download" data-id="{{$value2.ID}}" data-ioslink="{{$value2.Ios}}" data-androidlink="{{$value2.Apk}}">
+                                            {{$value2.DownText}}
+                                        </div>
+                                     </a>
+                                     </li>
+                                    {{end}}
+                            </ul>
+                            <div style="text-align:center;">
+                                 <a href="{{getCategoryUrl $.site "在线电影"}}" style="display: inline-block;background-color:#f92020;font-size:.24rem;color:#FFFFFF;padding:0 30px;border-radius:.7rem;line-height:.6rem;">更多下载</a>
+                             </div>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <ul>
+                                    {{$appinfo:= getAppInfoByName "赚钱游戏" 20}}
+                                     {{range $key2, $value2 := $appinfo}}
+                                     <li>
+                                       <a href="javascript:void(0);" class="item-wrap">
+                                        <div class="img-wrap" onclick="toinfo('{{$value2.CodeUrl}}')">
+                                            <img src="{{$value2.Icon}}" alt="{{$value2.Name | AscII}}">
+                                        </div>
+                                        <div class="name" onclick="toinfo('{{$value2.CodeUrl}}')">{{$value2.Name | AscII}}</div>
+                                        <div class="btn-wrap btn-download" data-id="{{$value2.ID}}" data-ioslink="{{$value2.Ios}}" data-androidlink="{{$value2.Apk}}">
+                                            {{$value2.DownText}}
+                                        </div>
+                                     </a>
+                                     </li>
+                                    {{end}}
+                            </ul>
+                            <div style="text-align:center;">
+                                 <a href="{{getCategoryUrl $.site "赚钱游戏"}}" style="display: inline-block;background-color:#f92020;font-size:.24rem;color:#FFFFFF;padding:0 30px;border-radius:.7rem;line-height:.6rem;">更多下载</a>
+                             </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- banner -->
+                <!--{{getTemplate "ad-daohang1-index3"}}-->
+                <!--<div class="banner-wrap">-->
+                <!--    <div class="swiper-container" style="height:2.5rem;">-->
+                <!--        <div class="swiper-wrapper">-->
+                <!--            <div class="swiper-slide" onclick="javascript:location.href='https://kpfv.jlbgw.net/hyzq2dfh.html'" style=" background: url(https://jusege.xyz/media/adv/staticUpload/adv_huayangzhanqunyinliuguanggao750_320_2_gif.gif?_v=)  no-repeat 50% 50% #f2f2f2; background-size: cover;"></div>-->
+                <!--            <div class="swiper-slide" onclick="javascript:location.href='http://www.2dfh.me/?code=67HF538D01'" style=" background: url(https://jusege.xyz/media/adv/staticUpload/adv_11.gif?_v=)  no-repeat 50% 50% #f2f2f2; background-size: cover;"></div>-->
+                <!--            <div class="swiper-slide" onclick="javascript:location.href='http://www.2dfh.me/?code=67HF538D01'" style=" background: url(https://jusege.xyz/media/adv/staticUpload/adv_11.gif?_v=)  no-repeat 50% 50% #f2f2f2; background-size: cover;"></div>-->
+                <!--            <div class="swiper-slide" onclick="javascript:location.href='http://papa.sex?channel=jsge002'" style=" background: url(https://jusege.xyz/media/adv/staticUpload/adv_750x320.gif?_v=)  no-repeat 50% 50% #f2f2f2; background-size: cover;"></div>-->
+                <!--            <div class="swiper-slide" onclick="javascript:location.href='http://www.yvideo.site/?code=PIFYGB'" style=" background: url(https://jusege.xyz/media/adv/staticUpload/adv_750_350.gif?_v=)  no-repeat 50% 50% #f2f2f2; background-size: cover;"></div>-->
+                <!--        </div>-->
+                <!--         Add Pagination -->
+                <!--        <div class="swiper-pagination"></div>-->
+                <!--    </div>-->
+                <!--</div>-->
+                <div>
+                    <!-- 分类 -->
+                    <!--<div class="list-title">热门推荐</div>-->
+                    <!-- 分类app -->
+                    <!--<div class="list-wrap">-->
+                    <!--    {{$appinfo:= getRecommend 40}}-->
+                    <!--    {{range $key, $value := $appinfo}}-->
+                    <!--    <div class="item-wrap">-->
+                    <!--        <div class="img-wrap" onclick="toinfo('{{$value.CodeUrl}}')">-->
+                    <!--            <img src="{{$value.Icon}}" alt="{{$value.Name | AscII}}">-->
+                    <!--        </div>-->
+                    <!--        <div class="content">-->
+                    <!--            <div class="row1">-->
+                    <!--                <div class="col-left" onclick="toinfo('{{$value.CodeUrl}}')">-->
+                    <!--                    <div class="name">-->
+                    <!--                        {{$value.Name | AscII}}{{if $value.Tag}} <span class="tj-wrap">{{$value.Tag}}</span> {{end}}</div>-->
+                    <!--                    <div class="count">{{$value.DownCount}}万次下载</div>-->
+                    <!--                </div>-->
+                    <!--                <div class="btn-wrap btn-download" data-id="94" data-ioslink="{{$value.Ios}}" data-androidlink="{{$value.Apk}}">-->
+                    <!--                    <img src="{{$.site.TemplateID}}/images/download.png?_v=1.23" alt="">-->
+                    <!--                    {{$value.DownText}}-->
+                    <!--                </div>-->
+                    <!--            </div>-->
+                    <!--            <div class="desc">{{$value.Remark | text | AscII }}</div>-->
+                    <!--        </div>-->
+                    <!--    </div>-->
+                    <!--    {{end}}-->
+                    <!--</div>-->
+                    
+                    
+                    <!-- 分类 -->
+                    <div class="list-title">精选导航</div>
+                    <!-- 分类app -->
+                    <div class="list-wrap">
+                        {{$appinfo:= getAppInfoByName "精选导航" 20}}
+                        {{range $key2, $value2 := $appinfo}}
+                        <div class="item-wrap">
+                            <div class="img-wrap" onclick="toinfo('{{$value2.CodeUrl}}')">
+                                <img src="{{$value2.Icon}}" alt="{{$value2.Name | AscII}}">
+                            </div>
+                            <div class="content">
+                                <div class="row1">
+                                    <div class="col-left" onclick="toinfo('{{$value2.CodeUrl}}')">
+                                        <div class="name">
+                                            {{$value2.Name | AscII}}{{if $value2.Tag}} <span class="tj-wrap">{{$value2.Tag}}</span> {{end}}</div>
+                                        <div class="count">{{$value2.DownCount}}万次下载</div>
+                                    </div>
+                                    <div class="btn-wrap btn-download" data-id="94" data-ioslink="{{$value2.Ios}}" data-androidlink="{{$value2.Apk}}">
+                                        <img src="{{$.site.TemplateID}}/images/download.png?_v=1.23" alt="">
+                                        {{$value2.DownText}}
+                                    </div>
+                                </div>
+                                <div class="desc">{{$value2.Remark | text | AscII }}</div>
+                            </div>
+                        </div>
+                        {{end}}
+                    </div>
+                </div>
+                
+                <div style="text-align:center;padding-bottom:.2rem;">
+                     <!--<a href="{{getCategoryUrl $.site "apps"}}" style="display: inline-block;background-color:#f92020;font-size:.24rem;color:#FFFFFF;padding:0 30px;border-radius:.7rem;line-height:.6rem;">更多下载</a>-->
+                     <a href="{{getCategoryUrl $.site "精选导航"}}"><i class="fas fa-external-link-alt"></i>更多下载</a>
+                </div>
+
+<!--底部广告-->
+<div class="appendTemplate" style="padding:.2rem .2rem;">
+    {{getTemplate "ad-daohang1-footer-about"}}
+</div>
+
+            </div>
+        </div>
+    </div>
+    <div class="screen-help">
+        <div class="help-inner">
+            <img src="{{$.site.TemplateID}}/images/screen-help-close.png?_v=1.23" class="img-close">
+            <img src="{{$.site.TemplateID}}/images/screen-help.png?_v=1.23" class="screenshot">
+        </div>
+    </div>
+    <div class="add-screen">
+        <div class="col1">
+            <div class="close-wrap">
+                <img src="{{$.site.TemplateID}}/images/screen-close.png?_v=1.23" class="img-close">
+            </div>
+            <!--<img src="{{$.site.TemplateID}}/images/app-icon.png" class="img-logo ios">-->
+            <img src="/cav.ooo-180x180.png" class="img-logo ios">
+        </div>
+        <div class="text ios">将 {{$.site.Title | AscII}} 添加至主屏幕</div>
+        <div class="text android">保存至书签，产品上新，永不迷路！</div>
+        <div class="add-btn ios">添加</div>
+    </div>
+    <div class="mark-wrap">
+        <div class="mark-inner">正在准备安装..</div>
+    </div>
+    <div class="pc-download">
+        <div class="inner-wrap">
+            <div class="qrcode-wrap">
+                <div class="item qrcode-ios">
+                    <div class="qrcode"></div>
+                    <div class="text">IOS 版</div>
+                </div>
+                <div class="item qrcode-android">
+                    <div class="qrcode"></div>
+                    <div class="text">Android 版</div>
+                </div>
+            </div>
+            <div class="close-wrap"><img src="{{$.site.TemplateID}}/images/close.png?_v=1.23" alt="close"></div>
+        </div>
+    </div>
+
+<!--友情链接-->
+
+
+
+    <script>
+    var mobile = '{{$.mobile}}'; //*0web 1android 2ios*//
+    var hhh=35;
+    $(function() {
+        var windowWidth = $(window).width();
+        var mySwiper = new Swiper('.swiper-containers', {
+            pagination: '.my-pagination-ul',
+            paginationClickable: true,
+            paginationBulletRender: function(mySwiper, index, className) {
+                switch (index) {
+                    case 0:
+                        name = '热门推荐';
+                        break;
+                    case 1:
+                        name = '成人视频';
+                        break;
+                    case 2:
+                        name = '成人直播';
+                        break;
+                    case 3:
+                        name = '免费电影';
+                        break;
+                    case 4:
+                        name = '赚钱游戏';
+                        break;
+                    default:
+                        name = '4';
+                }
+                return '<li class="' + className + '">' + name + '</li>';
+            },
+            onInit: function(obj) {
+                var itemHeight = 0;
+                if (windowWidth <= 360) {
+                    itemHeight = 150+20;
+                    hhh=30;
+                } else if (windowWidth <= 375 && windowWidth > 360) {
+                    itemHeight = 90+21;
+                     hhh=31;
+                } else if (windowWidth <= 414 && windowWidth > 375) {
+                    itemHeight = 90+25;
+                    hhh=35;
+                } else if (windowWidth > 414) {
+                    itemHeight = 160+21;
+                    hhh=51;
+                };
+                var _num = $(".swiper-containers .swiper-slide").eq(obj.activeIndex).find('li').length;
+                $(".swiper-containers .swiper-wrapper").height(Math.ceil(_num / 4) * itemHeight);
+            },
+            onSlideChangeEnd: function(obj) {
+                var _height = $(".swiper-containers .swiper-slide").eq(obj.activeIndex).find('ul').height();
+                $(".swiper-containers").height(_height+hhh);
+            }
+        });
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            autoplay: 4000,
+            slidesPerView: 1,
+            paginationClickable: true,
+            spaceBetween: 10,
+            loop: true
+        });
+
+        if (mobile !== '0') {
+            $(".add-screen").css({ "visibility": "visible" });
+            if (mobile === '1') {
+                $(".android").css({ "display": "flex" })
+            } else if (mobile === '2') {
+                $(".ios").css({ "display": "flex" })
+            } else {
+
+            }
+        }
+        $(".add-screen .close-wrap").click(function() {
+            $(".add-screen").css({ "visibility": "hidden" })
+        });
+
+        $(".add-screen .add-btn").click(function() {
+            $(".screen-help").css({ "visibility": "visible" })
+        });
+
+
+        $(".screen-help").click(function(e) {
+            if (e.target.className !== 'screenshot') {
+                $(".screen-help").css({ "visibility": "hidden" })
+            }
+        });
+
+        $(".btn-download").click(function(e) {
+            var data = $(this).data();
+            $.ajax({
+                url: '/mobile/statistical',
+                data: { id: data.id, type: mobile, code: '2' },
+                type: "post",
+                success: function(res) {
+                    if (res.code == '200') {
+                        if (mobile === '1') {
+                            window.location.href = data.androidlink;
+                        } else if (mobile === '2') {
+                            e.preventDefault();
+                            window.location.href = data.ioslink;
+                            $('.mark-wrap').css({ "display": 'flex' });
+                            setTimeout(function() { $('.mark-wrap').hide() }, 1500);
+                        } else if (mobile === '0') {
+                            $(".pc-download").css({ "visibility": "visible" });
+                            $('.qrcode-ios .qrcode').html("").qrcode({ width: 150, height: 150, text: data.ioslink });
+                            $('.qrcode-android .qrcode').html("").qrcode({ width: 150, height: 150, text: data.androidlink });
+                        } else {
+
+                        }
+                    }
+                },
+                error: function(error) {}
+            });
+        });
+
+        $(".pc-download").click(function(e) {
+            if (e.target.className !== 'qrcode-wrap') {
+                $(".pc-download").css({ "visibility": "hidden" })
+            }
+        });
+
+        $('#topAdBtn').click(function() {
+            if (mobile === '2') {
+                $('.add-btn').trigger('click');
+            } else if (mobile === '0') {
+                $(".pc-download").css({ "visibility": "visible" });
+                $('.qrcode-ios .qrcode').html("").qrcode({ width: 150, height: 150, text: window.location.href });
+                $('.qrcode-android .qrcode').html("").qrcode({ width: 150, height: 150, text: window.location.href });
+            } else {
+                window.location.href = 'https://www.cav1.top/?apk';
+            }
+        });
+
+        //getEncryptDomain('');
+
+    });
+
+
+    function toinfo(id) {
+        if (id) {
+            $.ajax({
+                url: '/mobile/statistical',
+                data: { id: id, type: mobile, code: '1' },
+                type: "post",
+                success: function(res) {
+                    if (res.code == '200') {
+                        var url = '/app/' + id;
+                        window.location.href=url;
+                        //getEncryptDomain(url);
+                    }
+                },
+                error: function(error) {}
+            });
+        }
+    }
+
+    function getEncryptDomain(url) {
+        $.ajax({
+            url: '/mobile/get-encrypt-link',
+            data: {url},
+            type: "post",
+            success: function(res) {
+                if (res.code == '200') {
+                    var encryptLink = res.data;
+                    //exeFn(url, encryptLink);
+                    window.location.href=encryptLink
+                }
+            },
+            error: function(error) {}
+        });
+    }
+    </script>
+
+{{$.site.SiteStatistics}}
+</body>
+</html>

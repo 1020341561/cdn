@@ -1,0 +1,67 @@
+<!DocType html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+		<title>{9CCMS:$WebTitle}分类{9CCMS-Book-List:Title}在线小说列表页面</title>
+		<meta name="keywords" content="{9CCMS:$WebKeywords},{9CCMS-Book-List:Title}" />
+		<meta name="description" content="{9CCMS:$WebDescription},{9CCMS-Book-List:Title}" />
+		<link href="{9CCMS:$StylePath}/css/style.css" rel="stylesheet">
+		<link href="{9CCMS:$StylePath}/css/style2.css" rel="stylesheet">
+		<meta name="theme-color" content="#ffffff">
+		<style>
+			.title {
+            font-size: 20px;
+            color: #222222;
+            margin-bottom: 5px;
+        }
+
+        .title-box {
+            border-bottom: 1px solid #ff8000;
+        }
+
+        .pagenation a {
+            color: black;
+        }
+
+        .pagenation a:hover {
+            color: ff8000;
+            text-decoration: none;
+        }
+    </style>
+	</head>
+
+	<body data-host="221" class="list hd" data-uid="">
+		{9CCMS-include:Header}
+		<div class="alert alert-default text-center " style="margin:10px 4px 0 4px;padding:0" id="domaintip">
+			<div class="dropdown">
+				小说分类：{9CCMS-Book-List:Title}
+			</div>
+		</div>
+		<ul class="art-list" style="padding: 0 25px;">
+			{9CCMS-Book-List:Count=20}
+			<li>
+				<p>
+					<a href="{9CCMS-Book-List:DUrl}" target="_blank">
+						{9CCMS-Book-List:Name}
+					</a>
+				</p>
+				<span>
+					<?php echo date('Y-m-d',strtotime($s['a_time'])) ?>
+				</span>
+			</li>
+			{/9CCMS-Book-List}
+		</ul>
+		
+		<div class="loading clearfix pagenation" data-page="0" data-pagesize="10">
+		    <a class="page_btn" style="color: #FFFFFF;" href="{9CCMS-Book-List:PageUrl}">首页</a>
+		    <a class="page_btn" style="color: #FFFFFF;" href="{9CCMS-Book-List:prevUrl}">上一页</a>
+		    <a class="page_btn" style="color: #FFFFFF;" href="{9CCMS-Book-List:nextUrl}">下一页</a>
+		    <a class="page_btn" style="color: #FFFFFF;" href="{9CCMS-Book-List:totalUrl}">尾页</a>
+		</div>
+		{9CCMS-include:Footer}
+	</body>
+
+</html>

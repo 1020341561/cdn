@@ -1,0 +1,70 @@
+<!DocType html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+		<title>{9CCMS:$WebTitle}分类{9CCMS-Bt-List:Title}在线种子列表页面</title>
+		<meta name="keywords" content="{9CCMS:$WebKeywords},{9CCMS-Bt-List:Title}" />
+		<meta name="description" content="{9CCMS:$WebDescription},{9CCMS-Bt-List:Title}" />
+		<link href="{9CCMS:$StylePath}/css/style.css" rel="stylesheet">
+		<link href="{9CCMS:$StylePath}/css/style2.css" rel="stylesheet">
+		<meta name="theme-color" content="#ffffff">
+		<style>
+			.title {
+            font-size: 20px;
+            color: #222222;
+            margin-bottom: 5px;
+        }
+
+        .title-box {
+            border-bottom: 1px solid #ff8000;
+        }
+
+        .pagenation a {
+            color: black;
+        }
+
+        .pagenation a:hover {
+            color: ff8000;
+            text-decoration: none;
+        }
+    </style>
+	</head>
+
+	<body data-host="221" class="list hd" data-uid="">
+		{9CCMS-include:Header}
+		<div class="alert alert-default text-center " style="margin:10px 4px 0 4px;padding:0" id="domaintip">
+			<div class="dropdown">
+				种子分类：{9CCMS-Bt-List:Title}
+			</div>
+		</div>
+		{9CCMS-Bt-List:Count=20}
+		<div class="video" id="v_VuHKbdWnH2">
+			<a href="{9CCMS-Bt-List:DUrl}">
+				<div class="vimg">
+					<img src="{9CCMS-Bt-List:Pic}">
+					<span class="vlen">更新时间： <?php echo date('Y-m-d',strtotime($s['d_time'])) ?>
+					</span>
+					<?php if(rand(0 ,1)) {?>
+					<span class="icon_promote icon_promote_right" style="width:100%;height:100%">
+						<span>站长推荐</span>
+					</span>
+					<?php } ?>
+				</div>
+				<p class="title"><span class="glyphicon glyphicon-hd-video" style="color:#337ab7"></span>
+					{9CCMS-Bt-List:Name} </p>
+			</a>
+		</div>
+		{/9CCMS-Bt-List}
+		<div class="loading clearfix pagenation" data-page="0" data-pagesize="10">
+		    <a class="page_btn" style="color: #FFFFFF;" href="{9CCMS-Bt-List:PageUrl}">首页</a>
+		    <a class="page_btn" style="color: #FFFFFF;" href="{9CCMS-Bt-List:prevUrl}">上一页</a>
+		    <a class="page_btn" style="color: #FFFFFF;" href="{9CCMS-Bt-List:nextUrl}">下一页</a>
+		    <a class="page_btn" style="color: #FFFFFF;" href="{9CCMS-Bt-List:totalUrl}">尾页</a>
+		</div>
+		{9CCMS-include:Footer}
+	</body>
+
+</html>

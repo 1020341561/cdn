@@ -1,0 +1,20 @@
+{
+  "version": 102,
+  "update": ture,
+  "update_and_download": https://www.com/xx.apk,
+  "update_ios_download": itms-beta://testflight.apple.com/join/zrydHV1h,
+  "setting_index": https://at.umtrack.com/onelink/Kzeqyu,
+  "setting_gohome": https://at.umtrack.com/onelink/5XzWfa,
+  "setting_about": https://at.umtrack.com/onelink/WXPveq,
+  "setting_feedback": https://at.umtrack.com/onelink/D4fGny,
+  "setting_feedback":{
+    能看“不存在”网站的浏览器，免费！无毒！无广告！  \n
+    最新免费福利APP \n
+    爱奇艺、腾讯视频、优酷VIP视频免费在线看 \n
+    下载地址： https://at.umtrack.com/onelink/nKbe8j \n
+  },
+  "ad_splash": {
+    "img": "https://www.com/123.png",
+    "url": "https://www.com/index.html"
+  },
+}

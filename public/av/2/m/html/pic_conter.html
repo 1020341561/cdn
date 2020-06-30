@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="Cache-Control" content="no-siteapp">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="renderer" content="webkit">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,minimal-ui">
+		<title>{9CCMS:$WebTitle}-{9CCMS:$ListName}-{9CCMS:$Name}套图浏览</title>
+		<meta name="keywords" content="{9CCMS:$WebKeywords},{9CCMS:$ListName},{9CCMS:$Name}" />
+		<meta name="description" content="{9CCMS:$WebDescription},{9CCMS:$ListName},{9CCMS:$Name}" />
+		<meta name="author" content="muqiao">
+
+		<link rel="stylesheet" href="{9CCMS:$StylePath}/css/swiper.min.css">
+		<link rel="stylesheet" href="{9CCMS:$StylePath}/css/Joe-red.css">
+		<script type="text/javascript" src="{9CCMS:$StylePath}/js/jquery.min.js"></script>
+		<script type="text/javascript" src="{9CCMS:$StylePath}/js/leeleo.js"></script>
+		<script type="text/javascript" src="{9CCMS:$StylePath}/js/font_534891_k48jbptqzuayvi.js"></script>
+		<script src="{9CCMS:$StylePath}/js/home.js"></script>
+		<link href="{9CCMS:$StylePath}/css/apppp.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<div class="channel">
+			{9CCMS-include:Header}
+			<div class="detail">
+				<style type="text/css">
+					.pic_conter img{
+						width: 100%;
+					}
+				</style>
+				<div class="detail-wrap pic_conter" style="height: auto;">
+					{9CCMS:$Play}
+				</div>
+			</div>
+			{9CCMS-DCAd}
+				<li style="list-style: none;"><a target="_blank"  href="{9CCMS-DCAd:Url}"><img style="width:{9CCMS-DCAd:Width};height:{9CCMS-DCAd:Height};margin-bottom:2px;" src="{9CCMS-DCAd:Pic}"></a></li> 
+			{/9CCMS-DCAd}
+			<section class="mod margin-t-15">
+					<div class="mod-head clearfix">
+						<div class="mod-head-title">
+						    <span class="mod-head-name"><svg class="icon" aria-hidden="true" style="font-size: 1.6rem;margin:0 0 0 -.1rem">
+			                <use xlink:href="#icon-wodezhuifan"></use>
+			                </svg>猜你喜欢</span>
+						</div>
+					</div>
+					<div class="mod-main clearfix">
+						<div class="mod-row">
+							<ul class="video-list video-film-list clearfix">
+									{9CCMS-Pic-Popular:Count=30}
+									<li class="video-item" tapmode="" onclick="showDefault('loading')">
+										<a class="video-link" href="{9CCMS-Pic-Popular:DUrl}" title="{9CCMS-Pic-Popular:Name}">
+											<div class="v-pic">
+												<img data-src="{9CCMS-Pic-Popular:Pic}" class="_item-pic _item-lazy" alt="{9CCMS-Pic-Popular:Name}" src="{9CCMS-Pic-Popular:Pic}">
+												<?php if(rand(0 ,1)){ ?>
+												<div class="video-tips red">推荐</div>
+												<?php } ?>
+												<a href="{9CCMS-Pic-Popular:DUrl}" title="{9CCMS-Pic-Popular:Name}" class="v-playBtn"><i></i></a>
+											</div>
+											<div class="video-con">
+												<h2 class="video-con-tit ellipsis-1">{9CCMS-Pic-Popular:Name}</h2>
+											</div>
+										</a>
+									</li>
+									{/9CCMS-Pic-Popular}
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+		</div>
+		<div id="_js_goTop" class="goTop" onclick="goTop()"><i class="iconfont icon-fold"></i></div>
+		{9CCMS-include:Footer}
+	</body>
+</html>

@@ -1,0 +1,176 @@
+<!DocType html>
+<html>
+<head>
+<title>{{ .Site.SiteTitle }}</title>
+<meta name="keywords" content="{{ .Site.SiteKeywords }}" />
+<meta name="description" content="{{ .Site.SiteDescription }}" />
+
+<meta name="applicable-device" content="pc,mobile" />
+<meta name="robots" content="index,follow" />
+<meta http-equiv="Cache-Control" content="no-transform" /> 
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<link rel="alternate" media="only screen and (max-width: 640px)" href="https://{{.Site.SiteUrl}}/" />
+<link rel="alternate" media="handheld" href="https://{{.Site.SiteUrl}}/" />
+<meta http-equiv="mobile-agent" content="format=html5; url=https://{{.Site.SiteUrl}}/" />
+<meta name="mobile-agent" content="format=[wml|xhtml|html5]; url=https://{{.Site.SiteUrl}}/"/>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="apple-mobile-web-app-title" content="{{ .Site.SiteTitle }}" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-itunes-app" content="app-id=5697068241111" />
+
+<meta name="apple-touch-fullscreen" content="yes" />
+
+<meta name="renderer" content="webkit" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="MobileOptimized" content="320" />
+<meta name="screen-orientation" content="portrait" />
+<meta name="x5-orientation" content="portrait" />
+<meta name="full-screen" content="yes" />
+<meta name="format-detection" content="telphone=no" />
+
+<link href="/favicon.ico" rel="shortcut icon" type="image/ico" />
+<link href="/favicon.ico" rel="icon" />
+<link href="/favicon.ico" rel="Bookmark" />
+<link rel="apple-touch-icon" href="/logo.png" />
+
+<link href="{{.StylePath}}/css/style.css" rel="stylesheet">
+<link href="{{.StylePath}}/css/style2.css" rel="stylesheet">
+		<meta name="theme-color" content="#ffffff">
+		<style>
+		.title {
+            font-size: 20px;
+            color: #222222;
+            margin-bottom: 5px;
+        }
+
+        .title-box {
+            border-bottom: 1px solid #ff8000;
+        }
+
+        .pagenation a {
+            color: black;
+        }
+
+        .pagenation a:hover {
+            color: ff8000;
+            text-decoration: none;
+        }
+    </style>
+	</head>
+
+	<body data-host="221" class="list hd" data-uid="">
+		{{include "style1/m/header.html" .}}
+		<div class="alert alert-default text-center " style="margin:10px 4px 0 4px;padding:0" id="domaintip">
+			<div class="dropdown">
+				{9CCMS-Index-Type:1}
+			</div>
+		</div>
+		{9CCMS-Index:Type=1,Count=10}
+		<div class="video" id="v_VuHKbdWnH2">
+			<a href="{9CCMS-Index:DUrl}">
+				<div class="vimg">
+					<img src="{9CCMS-Index:Pic}">
+					<span class="vlen">更新时间： <?php echo date('Y-m-d',strtotime($MYSQLVOD['d_time'])) ?>
+					</span>
+					<?php if(rand(0 ,1)) {?>
+					<span class="icon_promote icon_promote_right" style="width:100%;height:100%">
+						<span>站长推荐</span>
+					</span>
+					<?php } ?>
+				</div>
+				<p class="title"><span class="glyphicon glyphicon-hd-video" style="color:#337ab7"></span>
+					{9CCMS-Index:Name} </p>
+			</a>
+		</div>
+		{/9CCMS-Index}
+		<div class="alert alert-default text-center " style="margin:10px 4px 0 4px;padding:0" id="domaintip">
+			<div class="dropdown">
+				{9CCMS-Index-Type:3}
+			</div>
+		</div>
+		{9CCMS-Index:Type=3,Count=10}
+		<div class="video" id="v_VuHKbdWnH2">
+			<a href="{9CCMS-Index:DUrl}">
+				<div class="vimg">
+					<img src="{9CCMS-Index:Pic}">
+					<span class="vlen">更新时间： <?php echo date('Y-m-d',strtotime($MYSQLVOD['d_time'])) ?>
+					</span>
+					<?php if(rand(0 ,1)) {?>
+					<span class="icon_promote icon_promote_right" style="width:100%;height:100%">
+						<span>站长推荐</span>
+					</span>
+					<?php } ?>
+				</div>
+				<p class="title"><span class="glyphicon glyphicon-hd-video" style="color:#337ab7"></span>
+					{9CCMS-Index:Name} </p>
+			</a>
+		</div>
+		{/9CCMS-Index}
+		<div class="alert alert-default text-center " style="margin:10px 4px 0 4px;padding:0" id="domaintip">
+			<div class="dropdown">
+				{9CCMS-Index-Type:5}
+			</div>
+		</div>
+		{9CCMS-Index:Type=5,Count=10}
+		<div class="video" id="v_VuHKbdWnH2">
+			<a href="{9CCMS-Index:DUrl}">
+				<div class="vimg">
+					<img src="{9CCMS-Index:Pic}">
+					<span class="vlen">更新时间： <?php echo date('Y-m-d',strtotime($MYSQLVOD['d_time'])) ?>
+					</span>
+					<?php if(rand(0 ,1)) {?>
+					<span class="icon_promote icon_promote_right" style="width:100%;height:100%">
+						<span>站长推荐</span>
+					</span>
+					<?php } ?>
+				</div>
+				<p class="title"><span class="glyphicon glyphicon-hd-video" style="color:#337ab7"></span>
+					{9CCMS-Index:Name} </p>
+			</a>
+		</div>
+		{/9CCMS-Index}
+		<div class="alert alert-default text-center " style="margin:10px 4px 0 4px;padding:0" id="domaintip">
+			<div class="dropdown">
+				{9CCMS-Index-Type:7}
+			</div>
+		</div>
+		{9CCMS-Index:Type=7,Count=10}
+		<div class="video" id="v_VuHKbdWnH2">
+			<a href="{9CCMS-Index:DUrl}">
+				<div class="vimg">
+					<img src="{9CCMS-Index:Pic}">
+					<span class="vlen">更新时间：<?php echo date('Y-m-d',strtotime($MYSQLVOD['d_time'])) ?>
+					</span>
+					<?php if(rand(0 ,1)) {?>
+					<span class="icon_promote icon_promote_right" style="width:100%;height:100%">
+						<span>站长推荐</span>
+					</span>
+					<?php } ?>
+				</div>
+				<p class="title"><span class="glyphicon glyphicon-hd-video" style="color:#337ab7"></span>
+					{9CCMS-Index:Name} </p>
+			</a>
+		</div>
+		{/9CCMS-Index}
+		<div class="footer">
+			<div id="flinks">
+				<h5>友情链接</h5>
+				<p>
+					{9CCMS-IeUrl}
+					<a class="text-sub-title mx-2 text-small" href="{{$value.url}}" target="_blank" style="margin:0 10px;">
+						{{$value.name}}
+					</a>
+					{/9CCMS-IeUrl}
+				</p>
+			</div>
+		</div>
+		{{include "style1/m/footer.html" .}}
+	</body>
+
+</html>

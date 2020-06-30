@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>{{.Site.SiteTitle}}</title>
+<meta name="keywords" content="{{ .Site.SiteKeywords }}" />
+<meta name="description" content="{{ .Site.SiteDescription }}" />
+
+<meta name="applicable-device" content="pc,mobile" />
+<meta name="robots" content="index,follow" />
+<meta http-equiv="Cache-Control" content="no-transform" /> 
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<link rel="alternate" media="only screen and (max-width: 640px)" href="https://{{.Site.SiteUrl}}/" />
+<link rel="alternate" media="handheld" href="https://{{.Site.SiteUrl}}/" />
+<meta http-equiv="mobile-agent" content="format=html5; url=https://{{.Site.SiteUrl}}/" />
+<meta name="mobile-agent" content="format=[wml|xhtml|html5]; url=https://{{.Site.SiteUrl}}/" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="apple-mobile-web-app-title" content="{{ .Site.SiteTitle }}" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-itunes-app" content="app-id=5697068241111" />
+<meta name="apple-touch-fullscreen" content="yes" />
+
+<meta name="renderer" content="webkit" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="MobileOptimized" content="320" />
+<meta name="screen-orientation" content="portrait" />
+<meta name="x5-orientation" content="portrait" />
+<meta name="full-screen" content="yes" />
+<meta name="format-detection" content="telphone=no" />
+
+<link href="/favicon.ico" rel="shortcut icon" type="image/ico" />
+<link href="/favicon.ico" rel="icon" />
+<link href="/favicon.ico" rel="Bookmark" />
+<link rel="apple-touch-icon" href="/logo.png" />
+
+		<script src="{{.StylePath}}/js/app.js"></script>
+
+		<!--[if lt IE 11]>
+		<script type="text/javascript">
+			window.location.href='/notSupport';
+		</script>
+		<![endif]-->
+		<link rel="stylesheet" href="{{.StylePath}}/css/app.css">
+		<link rel="stylesheet" href="{{.StylePath}}/assets-static/fontawesome/css/fontawesome-all.min.css">
+	</head>
+
+	<body>
+		<div id="alert-messages" class="container fixed-top text-center">
+		</div>
+		{{{include "style2/pc/header.html" .}}
+		<main id="main">
+			<div class="container-fluid px-0">
+				<div class="row my-2">
+					<h5 class="container-title col-60">{{.search}}视频列表</h5>
+				</div>
+				<div class="row">
+					{9CCMS-Search-List:Count=12}	
+					<div class="colVideoList">
+						<div class="video-elem">
+							<a target="_blank" class="display d-block" href="{9CCMS-Search-List:DUrl}">
+								<div class="scale"></div>
+								<div class="img" style="background-image: url('{9CCMS-Search-List:Pic}')"></div>
+								<small class="layer">
+									{9CCMS-Search-List:Rand}
+								</small>
+								<?php $a = rand(0 , 1); echo $a ? '<small class=\'vip-layer\'>Hot</small>' : '' ?>
+							</a>
+							<a target="_blank" class="title text-sub-title mt-2 mb-3" href="{9CCMS-Search-List:DUrl}">{9CCMS-Search-List:Name}</a>
+						</div>
+					</div>
+					{/9CCMS-Search-List}
+					</div>
+				</div>
+				<div class="row">
+					<div class="my-4 mx-auto">
+						<ul class="pagination pagination-sm">
+							<li class="page-item">
+								<a class="page-link" href="{9CCMS-Search-List:PageUrl}">首页</a>
+							</li>
+							<li class="page-item ">
+								<a class="page-link" href="{9CCMS-Search-List:prevUrl}">上一页</a>
+							</li>
+							<li class="page-item ">
+								<a class="page-link" href="{9CCMS-Search-List:nextUrl}">下一页</a>
+							</li>
+							<li class="page-item">
+								<a class="page-link" href="{9CCMS-Search-List:totalUrl}">尾页</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</main>
+	</body>
+	{{include "style2/pc/footer.html" .}}
+
+</html>

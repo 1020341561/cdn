@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh">
+
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta content='width=device-width, initial-scale=1.0, user-scalable=0' name='viewport' />
+		<meta name="csrf-token" content="p0DU4SvtewiN3Z94ScwudtcRuCUm0RQVloM5JjKu" />
+
+		<title>{9CCMS:$WebTitle}-{9CCMS:$ListName}-{9CCMS:$Name}套图介绍</title>
+		<meta name="robots" content="index,follow" />
+		<meta name="keywords" content="{9CCMS:$WebKeywords},{9CCMS:$ListName},{9CCMS:$Name}" />
+		<meta name="description" content="{9CCMS:$WebDescription},{9CCMS:$ListName},{9CCMS:$Name}" />
+		<link rel="icon" type="image/x-icon" href="/favicon.ico">
+		<script src="{9CCMS:$StylePath}/js/app.js"></script>
+
+
+		<!--[if lt IE 11]>
+			<script type="text/javascript">
+				window.location.href='/notSupport';
+			</script>
+		<![endif]-->
+		<link rel="stylesheet" href="{9CCMS:$StylePath}/css/app.css" />
+		<link rel="stylesheet" href="{9CCMS:$StylePath}/assets-static/fontawesome/css/fontawesome-all.min.css" />
+	</head>
+
+	<body>
+		<div id="alert-messages" class="container fixed-top text-center">
+		</div>
+		{9CCMS-include:Header}
+		<main id="main">
+			<div id="videoShowPage">
+				<div class="row">
+					<div class="left col-60 offset-md-10 col-md-40">
+						<div class="videoPlayContainer">
+							<div class="scale"></div>
+							<div id="playerAdvLayer" class="adv-layer">
+								<div class="adv-img">
+									<a href='{9CCMS:$CUrl}' rel='nofollow' target='_blank'><img src='{9CCMS:$Pic}'></a>
+								</div>
+							</div>
+						</div>
+
+						<h4 class="container-title py-3 mb-0">{9CCMS:$Name}</h4>
+						<div class="videoInfos d-flex text-normal justify-content-between align-items-center">
+							<div class="options">
+								<span class="favoriteBtn cursor-p mx-2" needAuth data-id="8913">
+									<i class="fas fa-clock"></i>
+									更新时间:{9CCMS:$Time}
+								</span>
+							</div>
+							<nav class="videoShowTabs">
+								<div class="nav nav-tabs" id="nav-tab" role="tablist">
+									<a class="nav-item nav-link active" data-toggle="tab" href="#videoShowTabAbout">
+										<i class="far fa-play-circle"></i> <span class="d-none d-md-inline">播放</span>
+									</a>
+									<a class="nav-item nav-link" data-toggle="tab" href="#videoShowTabShare">
+										<i class="fas fa-share-alt"></i> <span class="d-none d-md-inline">分享</span>
+									</a>
+								</div>
+							</nav>
+						</div>
+						<div class="tab-content" id="nav-tabContent">
+							<div class="tab-pane fade show active my-4" id="videoShowTabAbout">
+								<div class="d-flex justify-content-between">
+									<!-- 播放按钮 -->
+									<div class="read-btn uk-margin-bottom uk-float-left">
+									    <a href="{9CCMS:$CUrl}" style="background: #333;color: #dbb277;border-radius: 3px;padding: 5px 20px;">点击浏览</a>
+									    <a href="{9CCMS:$CUrl}" style="background: #333;color: #dbb277;border-radius: 3px;padding: 5px 20px;">快速浏览</a>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade my-4" id="videoShowTabShare">
+								<div class="mb-3">分享地址</div>
+								<div class="form-group">
+									<div class="input-group ">
+										<input id="video-share-url" type="text" class="form-control" value="<?php echo 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'].'?'.$_SERVER['QUERY_STRING']; ?>">
+										<div class="input-group-append">
+											<span class="input-group-text clipboard-btn cursor-p" data-clipboard-target="#video-share-url">复制</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				{9CCMS-DCAd}
+				<a href="{9CCMS-DCAd:Url}" target="_blank"><img style="width:{9CCMS-DCAd:Width};height:{9CCMS-DCAd:Height};margin-bottom:2px;" src="{9CCMS-DCAd:Pic}"></a>
+				{/9CCMS-DCAd}
+				<div class="row">
+					<div class="col-60">
+						<div class="row mb-2">
+							<h5 class="container-title col-60">套图推荐</h5>
+						</div>
+						<div class="row">
+							{9CCMS-Pic-Popular:Count=6}
+							<div class="colPhotoList">
+							    <div class="photo-elem">
+									<a target="_blank" class="display d-block" style="background-image: url('{9CCMS-Pic-Popular:Pic}');background-size: 100% 100%;" href="{9CCMS-Pic-Popular:DUrl}">
+										<small class="layer">
+											<font style="vertical-align: inherit;">
+												<font style="vertical-align: inherit;"><?php 	preg_match('|【([^^]*?)】|u', $MYSQLVODs['a_name'], $matches);echo $matches[1] ?></font>
+											</font>
+										</small>
+							            <?php $a = rand(0 , 1); echo $a ? '<small class=\'vip-layer\'>Hot</small>' : '' ?>
+							        </a>
+									<a target="_blank" class="title text-sub-title mt-2 mb-3" href="{9CCMS-Pic-Popular:DUrl}"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{9CCMS-Pic-Popular:Name}</font></font></a>
+								</div>
+							</div>
+							{/9CCMS-Pic-Popular}	
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</main>
+		{9CCMS-include:Footer}
+	</body>
+
+</html>

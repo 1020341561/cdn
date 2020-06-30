@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<style>
+    html.pc,body.pc {
+        background: url(/{{$.site.TemplateID}}/images/bg3.jpg?0618) no-repeat;
+        background-size: 100% auto;
+    }
+</style>
+<html lang="zh-CN,en,default">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="force-rendering" content="webkit" />
+<title>{{if $.info.SiteTitle}}{{$.info.SiteTitle | AscII}}{{else}}{{$.info.Name | AscII}}{{end}}</title>
+<meta name="keywords" content="{{if $.info.SiteKeywords}} {{$.info.SiteKeywords | AscII}}{{else}}{{$.site.SiteKeywords | AscII}}{{end}}">
+<meta name="description" content="{{if $.info.SiteDescription}}{{$.info.SiteDescription | AscII}}{{else}}{{$.site.SiteDescription}}{{end}},{{$.info.Remark | text | AscII }}">
+<meta name="copyright" content="{{$.site.Title | AscII}} https://{{$.r.Request.Host}}">
+<meta name="generator" content="{{$.site.Title | AscII}} https://{{$.r.Request.Host}}" />
+<meta name="author" content="{{$.site.Title | AscII}} https://{{$.r.Request.Host}}" />
+
+<meta name="application-name" content="{{$.site.SiteTitle | AscII}}" />
+<meta name="msapplication-tooltip" content="{{$.site.SiteTitle | AscII}}" />
+
+
+
+<meta name="applicable-device" content="pc,mobile">
+<meta name="robots" content="index,follow">
+<meta name="revisit-after" content="1 days">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+<meta name=format-detection content="telephone=no, email=no"/>
+<meta name="mobile-agent" content="format=[wml|xhtml|html5]; url=https://{{$.r.Request.Host}}{{$.r.Request.RequestURI}}">
+<meta http-equiv="mobile-agent" content="format=html5; url=https://{{$.r.Request.Host}}{{$.r.Request.RequestURI}}">
+<link rel="canonical" href="https://{{$.r.Request.Host}}" >
+<link rel="alternate" media="only screen and (max-width: 640px)" href="https://{{$.r.Request.Host}}{{$.r.Request.RequestURI}}">
+<link rel="alternate" media="handheld" href="https://{{$.r.Request.Host}}{{$.r.Request.RequestURI}}">
+<link rel="home" href="https://{{$.r.Request.Host}}">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+<meta name="theme-color" content="#E1E1E1">
+
+<meta name="application-name" content="{{$.site.Title | AscII}}">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="{{$.site.Title | AscII}}">
+<!--打开独立模式 隐藏Safari用户界面组件-->
+<!--<meta name="apple-mobile-web-app-capable" content="yes">-->
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="apple-touch-icon" data-n-head="true" href="//{{$.r.Request.Host}}/cav.ooo-180x180.png" sizes="180x180">
+<link rel="apple-touch-icon-precomposed" href="//{{$.r.Request.Host}}/cav.ooo-180x180.png">
+<link rel="apple-touch-startup-image" href="//{{$.r.Request.Host}}/cav.ooo-splash.png" sizes="1125x2436">
+<!--<meta name="apple-itunes-app" content="app-id=0000000000">-->
+<meta name="apple-touch-fullscreen" content="yes">
+
+<meta name="renderer" content="webkit">
+<meta name="HandheldFriendly" content="true">
+<meta name="MobileOptimized" content="320">
+<meta name="screen-orientation" content="portrait">
+<meta name="x5-orientation" content="portrait">
+<meta name="full-screen" content="yes">
+<meta name="browsermode" content="application">
+
+<meta data-hid="og:site_name" name="og:site_name" property="og:site_name" content="{{$.site.Title | AscII}}1" />
+<meta property="og:title" content="{{$.info.SiteTitle | AscII}}" />
+<meta property="og:url" content="//{{$.r.Request.Host}}{{$.r.Request.RequestURI}}?so" />
+
+<meta property="og:type" content="soft"/>
+<meta property="og:title" content="{{$.info.SiteTitle | AscII}}"/>
+<meta property="og:description" content="{{$.info.SiteDescription | AscII}}"/>
+<meta property="og:soft:file_size" content="{{$.info.Version}}"/>
+<meta property="og:soft:operating_system" content="ios,android"/>
+{{range $key, $value := $.info.Imgs}}<meta property="og:image" content="{{$value}}"/>{{end}}
+<meta property="og:release_date" content="{{date "Y-m-d"}}"/>
+<meta property="og:soft:download_count " content="{{$.info.DownCount}}0000次下载"/>
+<meta property="og:soft:language" content="简体中文,中文,zh-cn,en-us"/>
+<meta property="og:soft:license" content="免费,free"/>
+<meta property="og:soft:url" content="https://{{$.r.Request.Host}}{{$.r.Request.RequestURI}}?so"/>
+
+<meta property="og:image:type" content="image/png">
+<meta data-react-helmet="true" property="og:image" content="{{$.info.Icon}}" />
+<meta data-react-helmet="true" property="og:image:width" content="120" />
+<meta data-react-helmet="true" property="og:image:height" content="120" />
+
+<meta data-react-helmet="true" name="twitter:card" content="summary_large_image" />
+<meta data-react-helmet="true" name="twitter:site" content="//{{$.r.Request.Host}}{{$.r.Request.RequestURI}}" />
+<meta data-react-helmet="true" name="twitter:title" content="{{$.info.SiteTitle | AscII}}" />
+<meta data-react-helmet="true" name="twitter:description" content="{{$.info.Remark | text | AscII }},{{$.site.SiteDescription | AscII}}" />
+<meta data-react-helmet="true" name="twitter:image" content="{{$.info.Icon}}" />
+<meta data-react-helmet="true" name="twitter:image:alt" content="{{$.info.SiteTitle | AscII}}"/>
+
+<link href="//{{$.r.Request.Host}}/{{$.site.TemplateID}}/favicon.ico" rel="shortcut icon" type="image/x-icon" data-n-head="true">
+<link href="//{{$.r.Request.Host}}/{{$.site.TemplateID}}/favicon.ico" rel="icon" data-n-head="true">
+<link href="//{{$.r.Request.Host}}/{{$.site.TemplateID}}/favicon.ico" rel="Bookmark" data-n-head="true">
+
+<link rel="stylesheet" href="/{{$.site.TemplateID}}/iconfont.css?_v=1.23">
+<link rel="stylesheet" href="/{{$.site.TemplateID}}/common.css?_v=1.23">
+<link rel="stylesheet" href="/{{$.site.TemplateID}}/swiper.min.css?_v=1.23">
+<script src="/{{$.site.TemplateID}}/common.js?_v=1.23"></script>
+<script src="/{{$.site.TemplateID}}/jquery.min.js?_v=1.23"></script>
+<script src="/{{$.site.TemplateID}}/swiper.min.js?_v=1.23"></script>
+<script src="/{{$.site.TemplateID}}/jquery.qrcode.min.js?_v=1.23"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/avhot/cdn@latest/app.cav.ooo/font-awesome.min.css?0506" id="font-awesome-css" media="all" alt="footer icon">
+</head>
+
+<body class="{{if eq $.mobile 0}}pc{{end}}">
+    <style type="text/css">
+    .page-detail .basic-wrap .img-wrap img {
+        border-radius: 0.2rem;
+        border: 1px solid #eeeeee;
+    }
+
+    .page-index .list-wrap .item-wrap .img-wrap img {
+        border-radius: 0.2rem;
+        border: 1px solid #eeeeee;
+    }
+    </style>
+    {{dump $.info}}
+    <div class="main-wrap page-detail">
+        <div class="main-body">
+            <div class="header-wrap">
+                <div class="header-inner">
+                    <div class="col-left" onclick="window.location.href='/'">
+                        <img src="/{{$.site.TemplateID}}/images/back.png?_v=1.23" alt="" class="img-back">
+                    </div>
+                    <div class="col-center scroll">
+                        <div class="site-name">{{$.info.Name | AscII}}</div>
+                    </div>
+                    <div class="col-right scroll">
+                        <div class="btn-download" data-id="{{$.info.ID}}" data-ioslink="{{$.info.Ios}}" data-androidlink="{{$.info.Apk}}">
+                            <img src="/{{$.site.TemplateID}}/images/download.png?_v=1.23" style="width:15px" alt="{{$.info.Name | AscII}}">{{$.info.DownText | AscII}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-content-detail">
+                <div class="basic-wrap">
+                    {{if $.info.Icon}}
+                    <div class="img-wrap">
+                        <img src="{{$.info.Icon}}" alt="{{$.info.Name | AscII}}">
+                    </div>
+                    {{end}}
+                    <div class="content">
+                        <div class="col-left">
+                            <div class="name"><h1>{{$.info.Name | AscII}}</h1></div>
+                            <div class="count"><img src="/{{$.site.TemplateID}}/images/icon-download.png" style="width:13px;"> {{$.info.DownCount}}万下载 {{if $.info.Size}}<img src="/{{$.site.TemplateID}}/images/icon-size.png" style="width:13px;"> {{$.info.Size}}M {{end}}
+                            </div>
+                            <div class="desc">
+                                <img src="/{{$.site.TemplateID}}/images/icon-verified.png" style="width:15px"> 官方认证 <img src="/{{$.site.TemplateID}}/images/icon-safe.png" style="width:15px"> 无病毒
+                            </div>
+                        </div>
+                        <div class="btn-wrap btn-download" data-id="{{$.info.ID}}" data-ioslink="{{$.info.Ios}}" data-androidlink="{{$.info.Apk}}">
+                            <img src="/{{$.site.TemplateID}}/images/download.png?_v=1.23" alt="">{{$.info.DownText | AscII}}
+                        </div>
+                    </div>
+                </div>
+                <!--  缩略图 -->
+                <div class="screenshot-wrap">
+                {{range $key, $value := $.info.Imgs}}
+                    <div class="img-wrap">
+                        <img src="{{$value}}" alt="">
+                    </div>
+                {{end}}
+                    </div>
+                </div>
+                
+                <!--软件信息-->
+                <div class="desc-wrap">
+                    <div style="color:gray">{{if $.info.Version}}版本号:{{$.info.Version}} &nbsp;{{end}}更新时间:{{$.info.UpdatedAt | date "Y-m-d"}}</div>
+                    <div class="title-wrap desc"><h2>应用描述</h2></div>
+                    <div class="content">
+                        <div class="text line3">
+                            {{$.info.Remark | text | AscII }}
+                        </div>
+                        <div class="btn-wrap">
+                            <img src="/{{$.site.TemplateID}}/images/more-desc.png?_v=1.23" class="btn-more">
+                        </div>
+                    </div>
+                </div>
+                
+                <!--更多应用推荐-->
+                <div class="page-index">
+                    <div class="list-title"><h2>热门推荐</h2></div>
+                    <div class="list-wrap">
+                        {{$Recommend:= getRecommend 35}}
+                        {{range $key, $value := $Recommend}}
+                        <div class="item-wrap">
+                            <div class="img-wrap" onclick="toinfo('{{$value.CodeUrl}}')">
+                                <img src="{{$value.Icon}}" alt="{{$value.Name | AscII}}">
+                            </div>
+                            <div class="content">
+                                <div class="row1">
+                                    <div class="col-left" onclick="toinfo('{{$value.CodeUrl}}')">
+                                        <div class="name">
+                                            {{$value.Name | AscII}} 
+                                            {{if $value.Tag}}<span class="tj-wrap">{{$value.Tag | AscII}}</span>{{end}}
+                                        </div>
+                                        <div class="count">{{$value.DownCount}}万次下载</div>
+                                    </div>
+                                    <div class="btn-wrap btn-download" data-id="{{$value.ID}}" data-ioslink="{{$value.Ios}}" data-androidlink="{{$value.Apk}}">
+                                        <img src="/{{$.site.TemplateID}}/images/download.png?_v=1.23" alt="">{{$value.DownText | AscII}}
+                                    </div>
+                                </div>
+                                <div class="desc">{{$value.Remark | text | AscII }}</div>
+                            </div>
+                        </div>
+                        {{end}}
+                    </div>
+                </div>
+            </div>
+
+<!--底部广告-->
+<div class="appendTemplate" style="padding:.2rem .2rem;">
+    {{getTemplate "ad-daohang1-footer-about"}}
+</div>
+
+        </div>
+    </div>
+    <div class="mark-wrap">
+        <div class="mark-inner">正在准备安装..</div>
+    </div>
+    
+    <!-- 弹层截图 -->
+    <div class="layer-screenshot {{if eq $.mobile 0}}pc{{end}}">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                {{range $key, $value := $.info.Imgs}}
+                <div class="swiper-slide" style="background:url('{{$value}}')  no-repeat 10% 10% #f2f2f2; width: 100%; background-size: cover;">
+                </div>
+                {{end}}
+            </div>
+
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <div class="pc-download">
+        <div class="inner-wrap">
+            <div class="qrcode-wrap">
+                <div class="item qrcode-ios">
+                    <div class="qrcode"></div>
+                    <div class="text">IOS 版</div>
+                </div>
+                <div class="item qrcode-android">
+                    <div class="qrcode"></div>
+                    <div class="text">Android 版</div>
+                </div>
+            </div>
+            <div class="close-wrap">
+                <img src="/{{$.site.TemplateID}}/images/close.png?_v=1.23" alt="">
+            </div>
+        </div>
+    </div>
+    <script>
+    var mobile = '{{$.mobile}}';
+    $(function() {
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            slidesPerView: 1,
+            paginationClickable: true,
+            spaceBetween: 10,
+            loop: true,
+        });
+
+        $(".screenshot-wrap .img-wrap").bind("click", function() {
+            $(".layer-screenshot").css("z-index", 99);
+            var index = $(this).index();
+            swiper.slideTo(index + 1, 0)
+        });
+
+        $(".layer-screenshot").click(function() {
+            $(".layer-screenshot").css("z-index", 1)
+        });
+ 
+        $(".page-detail").scroll(function() {
+            console.log("d")
+            var eHight = $(".basic-wrap").outerHeight();
+            var sHeight = $(".page-detail").scrollTop();
+            if (sHeight > eHight) {
+                $(".header-wrap").addClass("border-b");
+                $(".scroll").fadeIn()
+            } else {
+                $(".header-wrap").removeClass("border-b");
+                $(".scroll").fadeOut()
+            }
+        });
+
+        $(".btn-more").click(function() {
+            var canUp = $(this).hasClass("up");
+            if (canUp) {
+                $(".desc-wrap .text").addClass("line3");
+                $(this).removeClass("up")
+            } else {
+                $(".desc-wrap .text").removeClass("line3");
+                $(this).addClass("up")
+            }
+        });
+
+        $(".btn-download").click(function(e) {
+            var data = $(this).data();
+            $.ajax({
+                url: '/mobile/statistical',
+                data: { id: data.id, type: mobile, code: '2' },
+                type: "post",
+                success: function(res) {
+                    if (res.code == 200) {
+                        if (mobile === '1') {
+                            window.location.href = data.androidlink;
+                        } else if (mobile === '2') {
+                            e.preventDefault();
+                            window.location.href = data.ioslink;
+                            $('.mark-wrap').css({ "display": 'flex' });
+                            setTimeout(function() { $('.mark-wrap').hide() }, 1500);
+
+                        } else if (mobile === '0') {
+                            $(".pc-download").css({ "visibility": "visible" });
+                            $('.qrcode-ios .qrcode').html("").qrcode({ width: 150, height: 150, text: data.ioslink });
+                            $('.qrcode-android .qrcode').html("").qrcode({ width: 150, height: 150, text: data.androidlink });
+
+                        } else {
+                            console.log('illegal mobile:' + mobile + typeof mobile)
+                        }
+                    }
+                },
+                error: function(error) {}
+            });
+
+        });
+
+        $(".pc-download").click(function(e) {
+            if (e.target.className !== 'qrcode-wrap') {
+                $(".pc-download").css({ "visibility": "hidden" })
+            }
+        })
+    });
+
+    function toinfo(id) {
+        if (id ) {
+            $.ajax({
+                url: '/mobile/statistical',
+                data: { id: id, type: mobile, code: '1' },
+                type: "post",
+                success: function(res) {
+                    if (res.code == '200') {
+                        window.location.href = '/app/' + id;
+                    }
+                },
+                error: function(error) {}
+            });
+
+        }
+    }
+    </script>
+
+{{$.site.SiteStatistics}}
+</body>
+</html>

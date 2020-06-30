@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<style>
+    html.pc,body.pc {
+        background: url({{$.site.TemplateID}}/images/bg3.jpg?0618) no-repeat;
+        background-size: 100% auto;
+    }
+</style>
+<html lang="zh-CN,en,default">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="force-rendering" content="webkit" />
+<title>开放合作</title>
+<meta name="keywords" content="{{if $.cat.SiteKeywords}}{{$.cat.SiteKeywords | AscII}}{{else}}{{$.site.SiteKeywords | AscII}}{{end}}">
+<meta name="description" content="{{if $.cat.SiteDescription}}{{$.cat.SiteDescription | AscII}}{{else}}{{$.site.SiteDescription | AscII}}{{end}}">
+<meta name="copyright" content="{{$.site.Title | AscII}} https://{{$.r.Request.Host}}">
+<meta name="generator" content="{{$.site.Title | AscII}} https://{{$.r.Request.Host}}" />
+<meta name="author" content="{{$.site.Title | AscII}} https://{{$.r.Request.Host}}" />
+
+<meta name="application-name" content="{{$.site.SiteTitle | AscII}}" />
+<meta name="msapplication-tooltip" content="{{$.site.SiteTitle | AscII}}" />
+
+
+
+<meta name="applicable-device" content="pc,mobile">
+<meta name="robots" content="index,follow">
+<meta name="revisit-after" content="1 days">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+<meta name=format-detection content="telephone=no, email=no"/>
+<meta name="mobile-agent" content="format=[wml|xhtml|html5]; url=https://{{$.r.Request.Host}}{{$.r.Request.RequestURI}}">
+<meta http-equiv="mobile-agent" content="format=html5; url=https://{{$.r.Request.Host}}{{$.r.Request.RequestURI}}">
+<link rel="canonical" href="https://{{$.r.Request.Host}}" >
+<link rel="alternate" media="only screen and (max-width: 640px)" href="https://{{$.r.Request.Host}}{{$.r.Request.RequestURI}}">
+<link rel="alternate" media="handheld" href="https://{{$.r.Request.Host}}{{$.r.Request.RequestURI}}">
+<link rel="home" href="https://{{$.r.Request.Host}}">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+<meta name="theme-color" content="#E1E1E1">
+
+<meta name="application-name" content="{{$.site.Title | AscII}}">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="{{$.site.Title | AscII}}">
+<!--打开独立模式 隐藏Safari用户界面组件-->
+<!--<meta name="apple-mobile-web-app-capable" content="yes">-->
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="apple-touch-icon" data-n-head="true" href="//{{$.r.Request.Host}}/cav.ooo-180x180.png" sizes="180x180">
+<link rel="apple-touch-icon-precomposed" href="//{{$.r.Request.Host}}/cav.ooo-180x180.png">
+<link rel="apple-touch-startup-image" href="//{{$.r.Request.Host}}/cav.ooo-splash.png" sizes="1125x2436">
+<!--<meta name="apple-itunes-app" content="app-id=0000000000">-->
+<meta name="apple-touch-fullscreen" content="yes">
+
+<meta name="renderer" content="webkit">
+<meta name="HandheldFriendly" content="true">
+<meta name="MobileOptimized" content="320">
+<meta name="screen-orientation" content="portrait">
+<meta name="x5-orientation" content="portrait">
+<meta name="full-screen" content="yes">
+<meta name="browsermode" content="application">
+
+
+<link href="//{{$.r.Request.Host}}/cav.ooo-favicon.ico" rel="shortcut icon" type="image/x-icon" data-n-head="true">
+<link href="//{{$.r.Request.Host}}/cav.ooo-favicon.ico" rel="icon" data-n-head="true">
+<link href="//{{$.r.Request.Host}}/cav.ooo-favicon.ico" rel="Bookmark" data-n-head="true">
+
+<link rel="stylesheet" href="{{$.site.TemplateID}}/iconfont.css?_v=1.23">
+<link rel="stylesheet" href="{{$.site.TemplateID}}/common.css?_v=1.23">
+<link rel="stylesheet" href="{{$.site.TemplateID}}/swiper.min.css?_v=1.23">
+<script src="{{$.site.TemplateID}}/common.js?_v=1.23"></script>
+<script src="{{$.site.TemplateID}}/jquery.min.js?_v=1.23"></script>
+<script src="{{$.site.TemplateID}}/swiper.min.js?_v=1.23"></script>
+<script src="{{$.site.TemplateID}}/jquery.qrcode.min.js?_v=1.23"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/avhot/cdn@latest/app.cav.ooo/font-awesome.min.css?0506" id="font-awesome-css" media="all" alt="footer icon">
+</head>
+
+<body class="{{if eq $.mobile 0}}pc{{end}}">
+    <style type="text/css">
+    .page-detail .basic-wrap .img-wrap img {
+        border-radius: 0.2rem;
+        border: 1px solid #eeeeee;
+    }
+
+    .page-index .list-wrap .item-wrap .img-wrap img {
+        border-radius: 0.2rem;
+        border: 1px solid #eeeeee;
+    }
+    </style>
+
+    <div class="main-wrap page-detail">
+        <div class="main-body">
+            <div class="header-wrap">
+                <div class="header-inner">
+                    <div class="col-left" onclick="window.location.href='/'" style="color:#FF7DB1; font-size: 15px;">
+                        <img src="{{$.site.TemplateID}}/images/back.png?_v=1.23" alt="" class="img-back"> 返回首页
+                    </div>
+                    <div class="col-center scroll">
+                        <div class="site-name">开放合作</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-content-list">
+                <!--更多应用推荐-->
+                <div class="page-index">
+                    
+                    <div class="list-title">
+                        <a href="#" style="color: #FF7DB1" title="">
+                            <h1>开放合作</h1>
+                        </a>
+                    </div>
+                    <div class="list-wrap">
+                         <div class="item-wrap-about">
+                            &nbsp;&nbsp; · 此网站开放合作，如果您有现成的流量需要变现，亦或是有资源的业界大咖、SEO大神，欢迎与我们取得联系探讨合作；<br><br>
+                            &nbsp;&nbsp; · 如果您有相关产品急需推广，请联系我们商务合作；<br><br>
+                            &nbsp;&nbsp; · 如果您有产品研发、包网租赁、支付通道等需求，都可以联系我们；<br><br>
+                            &nbsp;&nbsp; · 如果您是有才之士，希望合伙创业，也请即刻联系我们，一起让世界变得更加性福！
+                        </div>            
+                    </div>
+                    
+                    
+                    <div class="list-title">
+                        <a href="#" style="color: #FF7DB1" title="">
+                            <h1>推广合作</h1>
+                        </a>
+                    </div>
+                    <div class="list-wrap">
+                         <div class="item-wrap-about">为满足广大产品快速获客需求，我们提供<strong>CPT包月</strong>、<b>CPA激活</b>、<b>CPC点击</b>等形式的商务合作，详请联系 telegram<a href="https://t.me/adhezuo">@adhezuo</a>
+                        </div>            
+                    </div>
+                    
+                    
+                    <div class="list-title">
+                        <a href="#" style="color: #FF7DB1" title="">
+                            <h1>提交APP收录</h1>
+                        </a>
+                    </div>
+                    <div class="list-wrap">
+                         <div class="item-wrap-about">
+                            发送APP产品信息到 <a href="mailto:tonyzdaddy@gmail.com" target="_blank" rel="nofollow">tonyzdaddy#gmail.com</a><br>
+                             &nbsp;&nbsp; · 推广链接<br>
+                             &nbsp;&nbsp; · 统计后台地址及账号密码<br>
+                             &nbsp;&nbsp; · 图标Logo(180px*180px) PNG格式<br>
+                             &nbsp;&nbsp; · 产品截图，每个TAB标签一涨截图<br>
+                        </div>            
+                    </div>
+                    
+                    
+                    <div class="list-title">
+                        <a href="#" style="color: #FF7DB1" title="">
+                            <h1>提交网站收录</h1>
+                        </a>
+                    </div>
+                    <div class="list-wrap">
+                         <div class="item-wrap-about">
+                            发送网站链接 到指定邮箱 <a href="mailto:tonyzdaddy@gmail.com" target="_blank" rel="nofollow">tonyzdaddy#gmail.com</a><br>
+                            &nbsp;&nbsp; · 申请前3天，每天来量IP不低于100个<br>
+                            &nbsp;&nbsp; · Alexa不低于20万<br>
+                        </div>            
+                    </div>
+
+                    
+                    <div class="list-title">
+                        <a href="#" style="color: #FF7DB1" title="">
+                            <h1>线下合作</h1>
+                        </a>
+                    </div>
+                    <div class="list-wrap">
+                         <div class="item-wrap-about">&nbsp;&nbsp;集团在美国、日本、菲律宾、柬埔寨、果敢老街等具有合法持牌办公场地，欢迎项目团队洽谈合作
+                        </div>            
+                    </div>
+                    
+                    <div class="list-title"  id="content-removal">
+                        <a href="#" style="color: #FF7DB1" title="">
+                            <h1>隐私声明</h1>
+                        </a>
+                    </div>
+                    <div class="list-wrap">
+                         <div class="item-wrap-about">
+                            <ul>
+                                <li>
+                                    <strong>CONTACT US</strong>
+                                    <br>
+                                    &nbsp;&nbsp;This site is only suitable for people aged 18 or above. The content of this website may be offensive; if you find that some content is inappropriate, or you are the copyright owner of the content and request to delete the video, please contact us, we will process it within two working days and reply to the processing result by email .
+                                    <br>
+                                    E-mail：<a href="mailto:tonyzdaddy@gmail.com" target="_blank" rel="nofollow">tonyzdaddy#gmail.com</a>
+                                </li><br>
+                                
+
+                                <li>
+                                    <strong>お問い合わせ</strong>
+                                    <br>
+                                    &nbsp;&nbsp;このサイトは18歳以上の方にのみ適しています。 このWebサイトのコンテンツは不適切である可能性があります。コンテンツの一部が不適切であることが判明した場合、またはコンテンツの著作権所有者であり、動画の削除をリクエストした場合は、ご連絡ください。2営業日以内に処理し、処理結果をメールで返信します 。
+                                    <br>
+                                    電子メール：<a href="mailto:tonyzdaddy@gmail.com" target="_blank" rel="nofollow">tonyzdaddy#gmail.com</a>
+                                </li><br>
+                                
+                                <li>
+                                    <strong>聯絡我們</strong>
+                                    <br>
+                                    &nbsp;&nbsp; 此網站只適合十八歲或以上人士觀看。此網站內容可能令人反感；如果你發現某些內容不合適，或者你是該内容的版權所有者而要求刪除影片，請聯繫我們，我們會在兩個工作日內進行處理並郵件回复處理結果。
+                                    <br>
+                                    電子信箱：<a href="mailto:tonyzdaddy@gmail.com" target="_blank" rel="nofollow">tonyzdaddy#gmail.com</a>
+                                </li><br>
+                                
+                                <li>
+                                    <strong>联络我们</strong>
+                                    <br>
+                                    &nbsp;&nbsp; 此网站只适合十八岁或以上人士观看。此网站内容可能令人反感；如果你发现某些内容不合适，或者你是该内容的版权所有者而要求删除影片，请联系我们，我们会在两个工作日内进行处理并邮件回复处理结果。
+                                    <br>
+                                    电子邮件：<a href="mailto:tonyzdaddy@gmail.com" target="_blank" rel="nofollow">tonyzdaddy#gmail.com</a>
+                                </li><br>
+                           </ul>
+                           End.
+                        </div>            
+                    </div>
+                </div>
+            </div>
+
+<!--底部广告-->
+<div class="appendTemplate" style="padding:.2rem .2rem;">
+    {{getTemplate "ad-daohang1-footer-about"}}
+</div>
+
+        </div>
+    </div>
+    <div class="mark-wrap">
+        <div class="mark-inner">正在准备安装..</div>
+    </div>
+
+        </div>
+    </div>
+    <div class="pc-download">
+        <div class="inner-wrap">
+            <div class="qrcode-wrap">
+                <div class="item qrcode-ios">
+                    <div class="qrcode"></div>
+                    <div class="text">IOS 版</div>
+                </div>
+                <div class="item qrcode-android">
+                    <div class="qrcode"></div>
+                    <div class="text">Android 版</div>
+                </div>
+            </div>
+            <div class="close-wrap">
+                <img src="{{$.site.TemplateID}}/images/close.png?_v=1.23" alt="">
+            </div>
+        </div>
+    </div>
+    
+    <script>
+    var mobile = '1';
+    $(function() {
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            slidesPerView: 1,
+            paginationClickable: true,
+            spaceBetween: 10,
+            loop: true,
+        });
+
+        $(".screenshot-wrap .img-wrap").bind("click", function() {
+            $(".layer-screenshot").css("z-index", 99);
+            var index = $(this).index();
+            swiper.slideTo(index + 1, 0)
+        });
+
+        $(".layer-screenshot").click(function() {
+            $(".layer-screenshot").css("z-index", 1)
+        });
+
+        $(".page-detail").scroll(function() {
+            var eHight = $(".basic-wrap").outerHeight();
+            var sHeight = $(".page-detail").scrollTop();
+            if (sHeight > eHight) {
+                $(".header-wrap").addClass("border-b");
+                $(".scroll").fadeIn()
+            } else {
+                $(".header-wrap").removeClass("border-b");
+                $(".scroll").fadeOut()
+            }
+        });
+
+        $(".btn-more").click(function() {
+            var canUp = $(this).hasClass("up");
+            if (canUp) {
+                $(".desc-wrap .text").addClass("line3");
+                $(this).removeClass("up")
+            } else {
+                $(".desc-wrap .text").removeClass("line3");
+                $(this).addClass("up")
+            }
+        });
+
+        $(".btn-download").click(function(e) {
+            var data = $(this).data();
+            $.ajax({
+                url: '/mobile/statistical',
+                data: { id: data.id, type: mobile, code: '2' },
+                type: "post",
+                success: function(res) {
+                    if (res.code == 200) {
+                        if (mobile === '1') {
+
+                            window.location.href = data.androidlink;
+
+                        } else if (mobile === '2') {
+
+                            e.preventDefault();
+                            window.location.href = data.ioslink;
+                            $('.mark-wrap').css({ "display": 'flex' });
+                            setTimeout(function() { $('.mark-wrap').hide() }, 1500);
+
+                        } else if (mobile === '0') {
+
+                            $(".pc-download").css({ "visibility": "visible" });
+                            $('.qrcode-ios .qrcode').html("").qrcode({ width: 150, height: 150, text: data.ioslink });
+                            $('.qrcode-android .qrcode').html("").qrcode({ width: 150, height: 150, text: data.androidlink });
+
+                        } else {
+                            console.log('illegal mobile:' + mobile + typeof mobile)
+                        }
+                    }
+                },
+                error: function(error) {}
+            });
+
+        });
+
+        $(".pc-download").click(function(e) {
+            if (e.target.className !== 'qrcode-wrap') {
+                $(".pc-download").css({ "visibility": "hidden" })
+            }
+        })
+    });
+
+    function toinfo(id) {
+        if (id) {
+            $.ajax({
+                url: '/mobile/statistical',
+                data: { id: id, type: mobile, code: '1' },
+                type: "post",
+                success: function(res) {
+                    if (res.code == '200') {
+                        window.location.href = '/app/' + id;
+                    }
+                },
+                error: function(error) {}
+            });
+
+        }
+    }
+    </script>
+
+{{$.site.SiteStatistics}}
+</body>
+</html>

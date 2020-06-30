@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta content='width=device-width, initial-scale=1.0, user-scalable=0' name='viewport' />
+		<meta name="csrf-token" content="p0DU4SvtewiN3Z94ScwudtcRuCUm0RQVloM5JjKu" />
+
+		<title>{9CCMS:$WebTitle}-{9CCMS:$ListName}-{9CCMS:$Name}电台播放</title>
+		<meta name="robots" content="index,follow" />
+		<meta name="keywords" content="{9CCMS:$WebKeywords},{9CCMS:$ListName},{9CCMS:$Name}" />
+		<meta name="description" content="{9CCMS:$WebDescription},{9CCMS:$ListName},{9CCMS:$Name}" />
+		<link rel="icon" type="image/x-icon" href="/favicon.ico">
+		<script src="{9CCMS:$StylePath}/js/app.js"></script>
+
+		<!--[if lt IE 11]>
+			<script type="text/javascript">
+				window.location.href='/notSupport';
+			</script>
+		<![endif]-->
+		<link rel="stylesheet" href="{9CCMS:$StylePath}/css/app.css" />
+		<link rel="stylesheet" href="{9CCMS:$StylePath}/assets-static/fontawesome/css/fontawesome-all.min.css" />
+	</head>
+
+	<body>
+		<div id="alert-messages" class="container fixed-top text-center">
+		</div>
+		{9CCMS-include:Header}
+		<main id="main">
+			<div id="videoShowPage">
+				<div class="video-head uk-clearfix uk-margin-bottom d-none d-md-inline-block">
+				    <!-- 面包屑 -->
+				    <div class="bred uk-float-left">
+				        <p>
+				            <i class="fas fa-house-damage"></i>
+				            <span>您当前位置：</span>
+				            <a href="#">{9CCMS:$ListName}</a>
+				            <i class="fas fa-angle-right"></i>
+				            <a href="#" class="">{9CCMS:$Name}</a>
+				            <i class="fas fa-angle-right"></i>
+				            <span class="right">电台播放</span>
+				        </p>
+				        
+				    </div>
+				</div>
+				<h5 class="container-title mb-0" style="padding-bottom: 1rem !important;">{9CCMS:$Name}</h5>
+				<div class="row">
+					<div class="left col-60 col-md-45">
+						{9CCMS:$Play}
+					</div>
+					<div class="d-none d-md-inline-block col-md-15">
+						<img src="https://tool.9ccmsapi.com/Img3/?URL={9CCMS:$WEBUrl}" style="width:100%;">
+					</div>
+				</div>
+				<div class="d-none d-md-inline-block" style="margin-top: 1rem;">
+				    <a style="background: #333;color: #dbb277;border-radius: 3px;padding: 5px 20px;margin-right: 1rem;" href="#">
+				        <i class="far fa-heart"></i>
+				        <span>ID:{9CCMS:$Id}</span>
+				    </a>
+				    <a style="background: #333;color: #dbb277;border-radius: 3px;padding: 5px 20px;margin-right: 1rem;" href="#">
+				        <i class="far fa-star"></i>
+				        <span>电台分类:{9CCMS:$ListName}</span>
+				    </a>
+				    <a style="background: #333;color: #dbb277;border-radius: 3px;padding: 5px 20px;margin-right: 1rem;" href="#">
+				        <i class="far fa-star"></i>
+				        <span>无法收听请等待5-8秒或更换其他电台</span>
+				    </a>	
+				</div>
+				{9CCMS-DCAd}
+				<a href="{9CCMS-DCAd:Url}" target="_blank"><img style="width:{9CCMS-DCAd:Width};height:{9CCMS-DCAd:Height};margin-bottom:2px;" src="{9CCMS-DCAd:Pic}"></a>
+				{/9CCMS-DCAd}
+				<div class="row" style="margin-top: 1rem;">
+					<div class="col-60">
+						<div class="row mb-2">
+							<h5 class="container-title col-60">电台推荐</h5>
+						</div>
+						<div class="row">
+							{9CCMS-Radio-Popular:Count=12}
+							<div class="radioList">
+								<a target="_blank" class="novelElem" href="{9CCMS-Radio-Popular:DUrl}">
+									<img src="{9CCMS-Radio-Popular:Pic}"  style="width: 50px;height: 50px;border-radius: 50%;float: left;margin-right: 20px;">
+									<div class="info text-small" style="float: left;width: auto;">
+										<div class="mr-2">
+											<i class="fas fa-user mr-1"></i>
+											<span>匿名用户</span>
+										</div>
+										<div>
+											<i class="far fa-clock mr-1"></i>
+											<span><?php 	echo  $MYSQLVODs['d_time'] ?></span>
+										</div>
+									</div>
+									<div class="container-title" style="clear:both;overflow: hidden;white-space: nowrap;text-overflow:ellipsis;/">
+										{9CCMS-Radio-Popular:Name}
+									</div>
+									<div class="type">{9CCMS:$ListName}</div>
+								</a>
+							</div>
+							{/9CCMS-Radio-Popular}	
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</main>
+		{9CCMS-include:Footer}
+	</body>
+	
+
+</html>

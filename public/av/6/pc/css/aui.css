@@ -1,0 +1,368 @@
+/*
+ * =========================================================================
+ * APIClud - AUI UI 框架   
+ * Verson 2.0.0
+ * =========================================================================
+ */
+ /*初始化类*/
+
+/*导航栏*/
+.aui-bar {
+	position: relative;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 10;
+	width: 100%;
+	min-height: 2.25rem;
+	font-size: 0.9rem;
+	text-align: center;
+	display: table;
+}
+.aui-bar-nav {
+	top: 0;
+	line-height: 2.25rem;
+	background-color: #FFFFFF;
+	color: #ffffff;
+}
+.aui-title a {
+	color: inherit;
+}
+.aui-bar-nav .aui-title {
+	min-height: 2.25rem;
+	position: absolute;
+	margin: 0;
+	text-align: center;
+	white-space: nowrap;
+	right: 5rem;
+	left: 5rem;
+	width: auto;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	z-index: 2;
+	color: #333;
+}
+.aui-bar-nav a {
+	color: #333;
+}
+.aui-bar-nav .aui-pull-lefta {
+    padding: 0 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 400;
+    z-index: 2;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.aui-bar-nav .aui-pull-left {
+overflow: hidden;
+    padding-top: .5rem;
+    padding-left: .5rem;
+    width: 5rem;
+    height: .7rem;
+    margin-top: .88rem;
+    margin-left: .45rem;
+    background: transparent url(../images/logo.png) no-repeat;
+    -webkit-background-size: 3.8rem .75rem;
+    background-size: 3.8rem .75rem;
+}
+.aui-bar-nav .aui-pull-right {
+	padding: 0 0.5rem;
+	font-size: 0.8rem;
+	font-weight: 400;
+	z-index: 2;
+	-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+            align-items: center;
+}
+.aui-bar-nav .aui-btn {
+	position: relative;
+	z-index: 20;
+	height: 2.25rem;
+	line-height: 2.25rem;
+	padding-top: 0;
+	padding-bottom: 0;
+	margin: 0;
+	border-radius: 0.1rem;
+	border-width: 0;
+	background: transparent !important;
+}
+.aui-bar-nav .aui-btn.aui-btn-outlined {
+	position: relative;
+	padding: 0 0.15rem;
+	margin: 0.5rem;
+	height: 1.25rem;
+	line-height: 1.25rem;
+	border-width: 1px;
+	background: transparent !important;
+	border-color: #ffffff;
+}
+.aui-bar-nav .aui-btn:active {
+	background: none;
+}
+.aui-iconfonta {
+    position: relative;
+    font-family: "aui_iconfont" !important;
+    font-size: 0.7rem;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.aui-bar-nav .aui-iconfonta {
+    position: relative;
+    z-index: 20;
+    font-size: 0.9rem;
+    color: #ffffff;
+    font-weight: 400;
+    line-height: 2.25rem;
+}
+.aui-bar-nav .aui-btn .aui-iconfont {
+    font-size: 0.9rem;
+    line-height: 1.25rem;
+    padding: 0;
+    margin: 0;
+    background-size: 1rem 1rem;
+    width: 1rem;
+    height: 1rem;
+    margin-top: .1rem;
+	border-radius: 2rem;
+}
+.aui-bar-nav .aui-btn .aui-iconfonta {
+    font-size: 0.9rem;
+    line-height: 1.25rem;
+    padding: 0;
+    margin: 0;
+    color: #333;
+}
+.aui-bar-light {
+	color: #333;
+	background-color: #ffffff;
+}
+.aui-bar-nav.aui-bar-light .aui-iconfont,.aui-bar-nav.aui-bar-light .aui-iconfonta {
+	color: #333;
+}
+.aui-bar-nav.aui-bar-light .aui-btn-outlined {
+	border-color: #333;
+}
+.aui-bar-nav.aui-bar-light:after {
+    height: 1px;
+    background-color: #dddddd;
+    display: block;
+    content: '';
+    position: absolute;
+    top: auto;
+    left: 0;
+    right: auto;
+    bottom: 0;
+    width: 100%;
+    z-index: 2;
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+    pointer-events: none;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) {
+    .aui-bar.aui-bar-light:after {
+        -webkit-transform: scaleY(1);
+                transform: scaleY(1);
+    }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+    .aui-bar.aui-bar-light:after {
+        -webkit-transform: scaleY(0.5);
+                transform: scaleY(0.5);
+    }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 3) {
+    .aui-bar.aui-bar-light:after {
+        -webkit-transform: scaleY(0.333);
+                transform: scaleY(0.333);
+    }
+}
+/*底部切换栏*/
+.aui-bar-tab {
+	position: fixed;
+	top: auto;
+	bottom: 0;
+	table-layout: fixed;
+	background-color: #ffffff;
+	color: #757575;
+}
+.aui-bar-tab .aui-bar-tab-item {
+	display: table-cell;
+	position: relative;
+    width: 1%;
+    height: 2.5rem;
+    text-align: center;
+    vertical-align: middle;
+}
+.aui-bar-tab .aui-active {
+	color: #039be5;
+}
+.aui-bar-tab .aui-bar-tab-item .aui-iconfont {
+	position: relative;
+    z-index: 20;
+    top: 0.1rem;
+    height: 1.2rem;
+    font-size: 1rem;
+    line-height: 1rem;
+}
+.aui-bar-tab .aui-bar-tab-label {
+	display: block;
+    font-size: 0.6rem;
+    position: relative;
+}
+.aui-bar-tab .aui-badge {
+    position: absolute;
+    top: 0.1rem;
+    left: 55%;
+    z-index: 99;
+}
+.aui-bar-tab .aui-dot {
+    position: absolute;
+    top: 0.1rem;
+    right: 30%;
+    z-index: 99;
+	margin-right: -.2rem;
+}
+/*按钮工具栏*/
+.aui-bar-btn {
+	position: relative;
+    font-size: 0.7rem;
+    display: table;
+    white-space: nowrap;
+    margin: 0 auto;
+    padding: 0;
+    border: none;
+    width: 100%;
+    min-height: 1.8rem;
+}
+.aui-bar-btn-item {
+    display: table-cell;
+    position: relative;
+    width: 1%;
+    line-height: 1.6rem;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 0;
+    position: relative;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #03a9f4;
+    border-left-width: 0;
+}
+.aui-bar-btn .aui-input,
+.aui-bar-btn input,
+.aui-bar-btn select {
+	padding-left: 0.25rem;
+	padding-right: 0.25rem;
+    min-height: 1.8rem;
+}
+.aui-bar-btn-sm {
+    min-height: 1.3rem;
+}
+.aui-bar-btn.aui-bar-btn-sm  .aui-input,
+.aui-bar-btn.aui-bar-btn-sm  input,
+.aui-bar-btn.aui-bar-btn-sm  select {
+    min-height: 1.2rem;
+}
+.aui-bar-btn-sm .aui-bar-btn-item {
+    line-height: 1.3rem;
+    font-size: 0.6rem;
+}
+.aui-bar-btn-item.aui-active {
+    background-color: #03a9f4;
+    color: #ffffff;
+}
+.aui-bar-btn-item:first-child {
+    border-left-width: 1px;
+    border-top-left-radius: 0.2rem;
+    border-bottom-left-radius: 0.2rem;
+}
+.aui-bar-btn-item:last-child {
+    border-top-right-radius: 0.2rem;
+    border-bottom-right-radius: 0.2rem;
+    border-left: 0px;
+}
+.aui-bar-btn.aui-bar-btn-full .aui-bar-btn-item:first-child {
+    border-left-width: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.aui-bar-btn.aui-bar-btn-full .aui-bar-btn-item:last-child {
+    border-right-width: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.aui-bar-btn.aui-bar-btn-round .aui-bar-btn-item:first-child {
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+}
+.aui-bar-btn.aui-bar-btn-round .aui-bar-btn-item:last-child {
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+}
+.aui-bar-nav .aui-bar-btn {
+	margin-top: 0.45rem;
+	margin-bottom: 0.4rem;
+    min-height: 1.3rem;
+}
+.aui-bar-nav .aui-bar-btn-item {
+    line-height: 1.3rem;
+    border-color: #ffffff;
+}
+.aui-bar-nav .aui-bar-btn-item.aui-active {
+    background-color: #ffffff;
+    color: #03a9f4;
+}
+.aui-bar-nav.aui-bar-light .aui-bar-btn-item {
+    border-color: #03a9f4;
+}
+.aui-bar-nav.aui-bar-light .aui-bar-btn-item.aui-active {
+    background-color: #03a9f4;
+    color: #ffffff;
+}
+.aui-bar-nav > .aui-bar-btn {
+	width: 50%;
+}
+.aui-info {
+	position: relative;
+    padding: 0.5rem 0;
+    font-size: 0.7rem;
+    color: #757575;
+    background-color: transparent;
+    -webkit-box-sizing: border-box;
+    		box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    		justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    		align-items: center;
+
+}
+.aui-info-item {
+	-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+	display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    		align-items: center;
+}
+.aui-info-item > *,
+.aui-info > * {
+	display: inherit;
+	position: relative;
+}

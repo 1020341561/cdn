@@ -1,0 +1,64 @@
+		<footer class="footer">
+			<div class="footerText">
+				<p>Copyright © 2019 sexporn All Rights Reserved.</p>
+			</div>
+		</footer>
+		{9CCMS:$WebAdS}
+		<style type="text/css">
+			.propa_bottom{
+				z-index: 99999;
+			}
+		</style>
+		<span style="display: none;" class="mac_timming" data-file=""></span>
+		<nav class="mnav">
+			<a href="/?m=video_list*<?php echo rand(1,18) ?>*1" class="<?php echo strpos($_SERVER['QUERY_STRING'],'video_list') !== false ? 'active' : ' '; ?>">
+				<span class="iconfont icon-home" onclick="showDefault('loading')"></span>
+				<p>视频</p>
+			</a>
+			<a href="/?m=book_list*<?php echo rand(19,24) ?>*1" class="<?php echo strpos($_SERVER['QUERY_STRING'],'book_list') !== false ? 'active' : ' '; ?>">
+				<span class="iconfont icon-discover" onclick="showDefault('loading')"></span>
+				<p>小说</p>
+			</a>
+			<a href="/?m=pic_list*<?php echo rand(25,30) ?>*1" class="<?php echo strpos($_SERVER['QUERY_STRING'],'pic_list') !== false ? 'active' : ' '; ?>">
+				<span class="iconfont icon-picfill" onclick="showDefault('loading')"></span>
+				<p>美图</p>
+			</a>
+			<a href="/?m=radio_list*<?php echo rand(31,34) ?>*1" class="<?php echo strpos($_SERVER['QUERY_STRING'],'radio_list') !== false ? 'active' : ' '; ?>">
+				<span class="iconfont icon-musicfill" onclick="showDefault('loading')"></span>
+				<p>电台</p>
+			</a>
+			<a href="/?m=bt_list*<?php echo rand(35,36) ?>*1" class="<?php echo strpos($_SERVER['QUERY_STRING'],'bt_list') !== false ? 'active' : ' '; ?>">
+				<span class="iconfont icon-people" onclick="showDefault('loading')"></span>
+				<p>种子</p>
+			</a>
+		</nav>
+		<script type="text/javascript">
+			goTop = function(){
+				scrollTo(0,0);
+			}
+		</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153664047-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-153664047-1');
+</script>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>

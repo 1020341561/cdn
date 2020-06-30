@@ -1,0 +1,374 @@
+.main {
+    position: relative;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block;
+}
+.main .container {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.container {
+    width: 1024px;
+}
+.container {
+    max-width: 1024px;
+}
+@media (min-width: 992px)
+.container {
+    width: 970px;
+}
+@media (min-width: 768px)
+.container {
+    width: 750px;
+}
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.main_ranklist .pages-nav {
+    display: block;
+    height: 50px;
+}
+
+.mt5 {
+    margin-top: 5px;
+}
+.pages-nav {
+    padding: 5px 5px;
+    display: none;
+}
+.card-wrap {
+    background: #fff;
+    padding: 5px 15px 8px;
+    margin-bottom: 10px;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(26,26,26,0.1);
+    box-sizing: border-box;
+}
+
+ol, ul {
+    margin: 0;
+}
+
+ol, ul {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.ranklist .pages-nav li {
+    width: 20%;
+}
+
+.pages-nav li {
+    float: left;
+    width: 25%;
+    text-align: center;
+    line-height: 25px;
+    margin: 6px 0;
+}
+li {
+    list-style: none;
+}
+
+.ranklist .pages-nav li .active {
+    background: #d04341;
+    color: #fefefe;
+    border-color: #d04341;
+}
+
+.pages-nav li a {
+    font-size: 12px;
+    display: inline-block;
+    width: 90%;
+    color: #666;
+    border: 1px solid #666;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: #444;
+    cursor: pointer;
+}
+
+.main_ranklist .hot-movie {
+    margin-top: 5px;
+}
+
+.card-wrap {
+    background: #fff;
+    padding: 5px 15px 8px;
+    margin-bottom: 10px;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(26,26,26,0.1);
+    box-sizing: border-box;
+}
+
+.card-wrap .title {
+    line-height: 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+.card-wrap .title .theme {
+    float: left;
+    position: relative;
+    padding-left: 12px;
+    margin: 0;
+    line-height: 40px;
+    margin-right: 10px;
+    font-size: 15px;
+}
+
+.h5, h5 {
+    font-size: 14px;
+}
+.h4, .h5, .h6, h4, h5, h6 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+}
+
+.ranklist .hot-movie span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.fr {
+    float: right;
+}
+
+.ranklist .hot-movie .head {
+    margin-top: 15px;
+}
+
+.ranklist .hot-movie span.num {
+    margin-right: 15px;
+}
+
+.ranklist .hot-movie span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.ranklist .hot-movie span.subject {
+    width: 20%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ranklist .hot-movie span {
+    display: inline-block;
+    vertical-align: middle;
+}
+.ranklist .hot-movie span.rstype {
+    width: 30%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ranklist .hot-movie span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.ranklist .hot-movie .head span.douban_score, .ranklist .hot-movie .head span.redate {
+    font-size: 14px;
+    color: #444;
+    margin-right: 14px;
+    width: 60px;
+}
+
+.ranklist .hot-movie span.douban_score {
+    width: 15%;
+    color: #00a1d6;
+    margin-left: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.ranklist .hot-movie span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.ranklist .hot-movie span.hot {
+    width: 10%;
+    float: none;
+}
+
+.ranklist .hot-movie span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.ranklist .hot-movie .head span.douban_score, .ranklist .hot-movie .head span.redate {
+    font-size: 14px;
+    color: #444;
+    margin-right: 14px;
+    width: 60px;
+}
+
+.ranklist .hot-movie span.redate {
+    font-size: 12px;
+    color: #ccc;
+    float: right;
+    margin-right: 15px;
+}
+.ranklist .hot-movie span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.hot-movie .list {
+    padding-top: 7px;
+}
+
+ol, ul {
+    margin: 0;
+}
+ol, ul {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.hot-movie .item {
+    line-height: 38px;
+    height: 38px;
+}
+
+li {
+    list-style: none;
+}
+
+
+/*列表*/
+.ranklist .hot-movie .item span.num {
+    width: 28px;
+    height: 22px;
+    line-height: 22px;
+}
+
+.hot-movie .item:nth-child(1) .num {
+    background: #d04341;
+    color: #fff;
+}
+.ranklist .hot-movie span.num {
+    margin-right: 15px;
+}
+.hot-movie .item .num {
+    display: inline-block;
+    width: 20px;
+    height: 18px;
+    border-radius: 3px;
+    background: #ddd;
+    text-align: center;
+    line-height: 18px;
+    font-size: 12px;
+    margin-right: 8px;
+}
+.ranklist .hot-movie span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.ranklist .hot-movie span.subject {
+    width: 20%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ranklist .hot-movie span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+    color: #444;
+    cursor: pointer;
+}
+
+a {
+    color: #337ab7;
+    text-decoration: none;
+}
+a {
+    background-color: transparent;
+}
+
+.ranklist .hot-movie span.rstype {
+    width: 30%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ranklist .hot-movie span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.ranklist .hot-movie span.douban_score {
+    width: 15%;
+    color: #00a1d6;
+    margin-left: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.hot-movie .item .douban_score {
+    font-size: 12px;
+    color: #ccc;
+    margin-left: 5px;
+    max-width: 80px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+.ranklist .hot-movie span {
+    display: inline-block;
+    vertical-align: middle;
+}
+.ranklist .hot-movie span.hot {
+    width: 10%;
+    float: none;
+}
+
+.hot-movie .item .hot {
+    float: right;
+    font-size: 12px;
+    color: #d04341;
+}
+.ranklist .hot-movie span {
+    display: inline-block;
+    vertical-align: middle;
+}
+.ranklist .hot-movie span.redate {
+    font-size: 12px;
+    color: #ccc;
+    float: right;
+    margin-right: 15px;
+}
+
+.ranklist .hot-movie span {
+    display: inline-block;
+    vertical-align: middle;
+}
+

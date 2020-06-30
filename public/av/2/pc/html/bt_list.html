@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="zh">
+
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta content='width=device-width, initial-scale=1.0, user-scalable=0' name='viewport'>
+		<meta name="csrf-token" content="fTlp5B4EMirpRvvB0dGzhW2wBUSgehM4vaa7dXzZ">
+		<link rel="preconnect" href="https://www.googletagmanager.com/">
+		<link rel="preconnect" href="https://www.google-analytics.com/">
+	
+		<title>{9CCMS:$WebTitle}分类{9CCMS-Bt-List:Title}种子列表页</title>
+	
+		<meta name="robots" content="index,follow">
+		
+		<script src="{9CCMS:$StylePath}/js/app.js"></script>
+		<meta name="keywords" content="{9CCMS:$WebKeywords},{9CCMS-Bt-List:Title}">
+		<meta name="description" content="{9CCMS:$WebDescription},{9CCMS-Bt-List:Title}">
+		<!--[if lt IE 11]>
+		<script type="text/javascript">
+			window.location.href='/notSupport';
+		</script>
+		<![endif]-->
+		<link rel="stylesheet" href="{9CCMS:$StylePath}/css/app.css">
+		<link rel="stylesheet" href="{9CCMS:$StylePath}/assets-static/fontawesome/css/fontawesome-all.min.css">
+	</head>
+
+	<body>
+		<div id="alert-messages" class="container fixed-top text-center">
+		</div>
+		{9CCMS-include:Header}
+		<main id="main">
+			<div id="videoListPage" class="container-fluid p-0">
+				<div class="mobileCateContainer row container-fluid d-block d-lg-none">
+					<div class="row">
+						<div class="head col-60">所有分类 <i class="fas fa-chevron-down ml-1"></i></div>
+					</div>
+					<div class="list row">
+						<?php  $types = array();$vodtype=(array)$this->value['vodtype'];$pid = $vodtype[$this->value['typeId']]['type'];for($i = 0 ; $i < count($vodtype) ; $i++){if($vodtype[$i]['type'] === $pid){array_push($types,$vodtype[$i]);}}for($x=0;$x<count($types);$x++){ ?>
+						<div class="item col-30" click="redirect" data-href="/?m=bt_list*<?php  echo $types[$x]['id'] ?>*1"><?php  echo $types[$x]['name'] ?></div>
+						<?php  } ?>
+					</div>
+				</div>
+				<div class="row">
+					<div class="cateContainer col-lg-11 d-none d-lg-block">
+						<ul>
+							<li class="title active"><i class="fas fa-list"></i> 种子分类</li>
+							<?php  $types = array();$vodtype=(array)$this->value['vodtype'];$pid = $vodtype[$this->value['typeId']]['type'];for($i = 0 ; $i < count($vodtype) ; $i++){if($vodtype[$i]['type'] === $pid){array_push($types,$vodtype[$i]);}}for($x=0;$x<count($types);$x++){ ?>
+							<li class="<?php echo $types[$x]['id'] === $this->value['typeId'] ? 'active' : '' ?>" click="redirect" data-href="/?m=bt_list*<?php  echo $types[$x]['id'] ?>*1"><i class="far fa-play-circle"></i> <?php  echo $types[$x]['name'] ?></li>
+							<?php  } ?>
+						</ul>
+					</div>
+					<div class="col-lg-1"></div>
+					<div class="col-60 col-lg-48">
+						<div class="row">
+							{9CCMS-Bt-List:Count=12}	
+							<div class="colVideoList">
+								<div class="video-elem">
+									<a target="_blank" class="display d-block" href="{9CCMS-Bt-List:DUrl}">
+										<div class="scale"></div>
+										<div class="img" style="background-image: url('{9CCMS-Bt-List:Pic}')"></div>
+
+										<small class="layer">
+											{9CCMS-Bt-List:Rand}
+										</small>
+										<?php $a = rand(0 , 1); echo $a ? '<small class=\'vip-layer\'>Hot</small>' : '' ?>
+									</a>
+									<a target="_blank" class="title text-sub-title mt-2 mb-3" href="{9CCMS-Bt-List:DUrl}">{9CCMS-Bt-List:Name}</a>
+								</div>
+							</div>
+							{/9CCMS-Bt-List}
+						</div>
+						<div class="row">
+							<div class="my-4 mx-auto">
+								<ul class="pagination pagination-sm">
+									<li class="page-item">
+										<a class="page-link" href="{9CCMS-Bt-List:PageUrl}">首页</a>
+									</li>
+									<li class="page-item ">
+										<a class="page-link" href="{9CCMS-Bt-List:prevUrl}">上一页</a>
+									</li>
+									<li class="page-item ">
+										<a class="page-link" href="{9CCMS-Bt-List:nextUrl}">下一页</a>
+									</li>
+									<li class="page-item">
+										<a class="page-link" href="{9CCMS-Bt-List:totalUrl}">尾页</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		{9CCMS-include:Footer}
+	</body>
+
+</html>

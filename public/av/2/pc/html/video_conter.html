@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<title>{{.Video.VodName}}免费视频在线播放_{{ .Site.SiteTitle }}</title>
+<meta name="keywords" content="{{.Video.VodName}},免费视频,在线观看,{{.ListName}},{{ .Site.SiteKeywords }}" />
+<meta name="description" content="{{.Video.VodName}}免费视频在线播放，{{ .Site.SiteDescription }}," />
+
+<meta name="applicable-device" content="pc,mobile" />
+<meta name="robots" content="index,follow" />
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<link rel="alternate" media="only screen and (max-width: 640px)" href="https://{{.Site.SiteUrl}}/" />
+<link rel="alternate" media="handheld" href="https://{{.Site.SiteUrl}}/" />
+<meta http-equiv="mobile-agent" content="format=html5; url=https://{{.Site.SiteUrl}}/" />
+<meta name="mobile-agent" content="format=[wml|xhtml|html5]; url=https://{{.Site.SiteUrl}}/" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="apple-mobile-web-app-title" content="{{ .Site.SiteTitle }}" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-itunes-app" content="app-id=5697068241111" />
+<meta name="apple-touch-fullscreen" content="yes">
+
+<meta name="renderer" content="webkit" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="MobileOptimized" content="320" />
+<meta name="screen-orientation" content="portrait" />
+<meta name="x5-orientation" content="portrait" />
+<meta name="full-screen" content="yes" />
+<meta name="format-detection" content="telphone=no" />
+
+<link href="/favicon.ico" rel="shortcut icon" type="image/ico" />
+<link href="/favicon.ico" rel="icon" />
+<link href="/favicon.ico" rel="Bookmark" />
+<link rel="apple-touch-icon" href="/logo.png" />
+
+<meta property="og:type" content="video" />
+<meta property="og:title" content="{{.Video.VodName}}" />
+<meta property="og:description" content="{{.Video.VodName}}免费视频在线观看,{{ .Site.SiteDescription }}" />
+<meta property="og:url" content="{{.play}}" /> 
+<meta property="og:image" content="{{.Video.VodPic}}" /> 
+<meta property="og:video" content="{{M3u8Url .Video}}" />
+<meta property="og:video:duration" content="1:{{.Video.VodTime | date "m:d"}}" />
+<meta property="og:video:pix" content="4"/>
+<meta property="og:video:release_date" content="{{.Video.VodTime | date "Y-m-d"}}" />
+<meta property="og:video:actor" content="视频演员" />
+<meta property="og:video:director" content="视频导演" />
+
+		<script src="{{.StylePath}}/js/app.js"></script>
+		<!--[if lt IE 11]>
+			<script type="text/javascript">
+				window.location.href='/notSupport';
+			</script>
+		<![endif]-->
+		<link rel="stylesheet" href="{{.StylePath}}/css/app.css" />
+		<link rel="stylesheet" href="{{.StylePath}}/assets-static/fontawesome/css/fontawesome-all.min.css" />
+	</head>
+
+	<body>
+		<div id="alert-messages" class="container fixed-top text-center">
+		</div>
+		{{{include "style2/pc/header.html" .}}
+		<main id="main">
+			<div id="videoShowPage">
+				<div class="video-head uk-clearfix uk-margin-bottom d-none d-md-inline-block">
+				    <!-- 面包屑 -->
+				    <div class="bred uk-float-left">
+				        <p>
+				            <i class="fas fa-house-damage"></i>
+				            <span>您当前位置：</span>
+				            <a href="https://{{.Site.SiteUrl}}/" title="{{.Site.SiteTitle}}">首页</a>
+				            <i class="fas fa-angle-right"></i>
+				            <a href="{{ListUrl .cat}}">{{.ListName}}</a>
+				            <i class="fas fa-angle-right"></i>
+				            <a href="" class="" title="{{.Video.VodName}}_免费视频在线播放">{{.Video.VodName}} 在线播放</a>
+				            <i class="fas fa-angle-right"></i>
+				            <span class="right">视频播放</span>
+				        </p>
+				        
+				    </div>
+				</div>
+				<h5 class="container-title mb-0" style="padding-bottom: 1rem !important;">{9CCMS:$Name}</h5>
+				<div class="row">
+					<div class="left col-60 col-md-45">
+						{9CCMS:$Play}
+					</div>
+					<div class="d-none d-md-inline-block col-md-15">
+						<img src="https://tool.9ccmsapi.com/Img3/?URL={9CCMS:$WEBUrl}" style="width:100%;">
+					</div>
+				</div>
+				<div class="d-none d-md-inline-block" style="margin-top: 1rem;">
+				    <a style="background: #333;color: #dbb277;border-radius: 3px;padding: 5px 20px;margin-right: 1rem;" href="#">
+				        <i class="far fa-heart"></i>
+				        <span>ID:{9CCMS:$Id}</span>
+				    </a>
+				    <a style="background: #333;color: #dbb277;border-radius: 3px;padding: 5px 20px;margin-right: 1rem;" href="#">
+				        <i class="far fa-star"></i>
+				        <span>视频分类:{9CCMS:$ListName}</span>
+				    </a>
+				    <a style="background: #333;color: #dbb277;border-radius: 3px;padding: 5px 20px;margin-right: 1rem;" href="#">
+				        <i class="far fa-star"></i>
+				        <span>无法播放请等待5-8秒或更换其他影片</span>
+				    </a>	
+				</div>
+				{9CCMS-DCAd}
+				<a href="{9CCMS-DCAd:Url}" target="_blank"><img style="width:{9CCMS-DCAd:Width};height:{9CCMS-DCAd:Height};margin-bottom:2px;" src="{9CCMS-DCAd:Pic}"></a>
+				{/9CCMS-DCAd}
+				<div class="row" style="margin-top: 1rem;">
+					<div class="col-60">
+						<div class="row mb-2">
+							<h5 class="container-title col-60">视频推荐</h5>
+						</div>
+						<div class="row">
+							{9CCMS-Video-Popular:Count=12}
+							<div class="colVideoList">
+								<div class="video-elem">
+									<a target="_blank" class="display d-block" href="{9CCMS-Video-Popular:DUrl}">
+										<div class="scale"></div>
+										<div class="img" style="background-image: url('{9CCMS-Video-Popular:Pic}')"></div>
+
+										<small class="layer">
+											{9CCMS-Index:Rand}
+										</small>
+										<?php $a = rand(0 , 1); echo $a ? '<small class=\'vip-layer\'>Hot</small>' : '' ?>
+									</a>
+									<a target="_blank" class="title text-sub-title mt-2 mb-3" href="{9CCMS-Video-Popular:DUrl}">{9CCMS-Video-Popular:Name}</a>
+								</div>
+							</div>
+							{/9CCMS-Video-Popular}	
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</main>
+		{{include "style2/pc/footer.html" .}}
+	</body>
+
+</html>

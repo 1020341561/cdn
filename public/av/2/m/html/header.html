@@ -1,0 +1,48 @@
+			<header>
+				<div class="head">
+					<div class="logo">
+						<img src="./mlogo.png" alt="{{.Site.SiteTitle}}" style="width: auto;" >
+					</div>
+					<a class="pull-right btn" href="javascript:;" style="margin-right: 30px;" onclick="openSearch()">
+						<span class="iconfont icon-search"></span>
+					</a>
+				</div>
+			</header>
+			<!--搜索布局-->
+			<section class="searchPop">
+				<div class="searchCon">
+					<a class="pull-left btn" href="javascript:;" onclick="cancelSearch()">
+						<span class="iconfont icon-back" style="font-size: .4rem;color: #fff;top: 0;margin-left: .3rem;line-height: .88rem;"></span>
+					</a>
+					<div class="sSearchInput" style="margin-left: .8rem;">
+						<form class="search-form" target="_self">
+							<input class="searchInput" name="search" type="search" autocomplete="off" placeholder="输入影片片名或演员名称。">
+						</form>
+					</div>
+					<input type="submit" value="" style="display: none!important;"><a href="javascript:" title="搜索" onclick="$('.search-form').submit();"><span
+						 class="cancelInput">搜索</span></a>
+				</div>
+				<!--搜索标签-->
+				<section class="mod margin-t-15">
+					<div class="mod-head clearfix">
+						<div class="mod-head-title">
+							<span class="mod-head-name">热门搜索</span>
+						</div>
+					</div>
+					<div class="mod-main clearfix">
+						<div class="mod-tags">
+							<div class="search-tags">
+								<?php
+								$array = array("小鸟酱", "亚洲", "后入", "酒店", "偷拍", "大学生", "出租司机", "外交官", "检察官", "休息室", "工作人员", "主持人", "神谷千代", "泷泽萝拉", "外贸", "店员", "女友", "开房", "美少女", "播音员", "程序员", "中出", "失禁", "教师", "模特", "大屌", "开房", "厕所", "3P", "邻居", "妻子", "大生");
+								for($i = 0 ; $i<count($array);$i++) {
+								?>
+								<a href="/?m=video_search*<?php echo $array[$i] ?>*1" title="<?php echo $array[$i] ?>"><span class="badge "><?php echo $array[$i] ?></span></a>
+								<?php  } ?>
+							</div>
+						</div>
+					</div>
+				</section>
+			</section>
+			{9CCMS-TAd}
+				<li style="list-style: none;"><a target="_blank"  href="{9CCMS-TAd:Url}" ><img style="width:{9CCMS-TAd:Width};height:{9CCMS-TAd:Height};margin: 0 auto;margin-bottom:2px;" src="{9CCMS-TAd:Pic}"></a></li> 
+			{/9CCMS-TAd}

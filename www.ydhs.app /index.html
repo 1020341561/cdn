@@ -1,0 +1,282 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>云端会所APP_YDHS.APP</title>
+<meta name="keywords" content="云端会所,云端会所app,云端会所下载,云端会所ios,云端会所apk,云端会所安卓,云端会所客户端" />
+<meta name="description" content="云端会所APP客户端支持iPhone苹果iOS、安卓apk，线上选佳丽、线下见美女，7000万用户共同选择！" />
+<link rel="prerender"  href="download.html" />
+
+<meta name="author" content="https://www.yunduanhuisuo.com" />
+<link rel='dns-prefetch' href='https://www.yunduanhuisuo.com' />
+<link rel="canonical" href="https://www.yunduanhuisuo.com">
+
+<meta name="applicable-device" content="pc,mobile" />
+<meta name="robots" content="index,follow,noarchive" />
+<meta http-equiv="Cache-Control" content="no-transform" /> 
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<link rel="alternate" media="only screen and (max-width: 640px)" href="https://www.ydhs.app" />
+<link rel="alternate" media="handheld" href="https://www.ydhs.app" />
+<meta http-equiv="mobile-agent" content="format=html5; url=https://www.yunduanhuisuo.com" />
+<meta name="mobile-agent" content="format=[wml|xhtml|html5]; url=https://www.yunduanhuisuo.com" />
+
+<meta name="apple-mobile-web-app-title" content="云端会所APP" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-touch-fullscreen" content="yes" />
+<link rel="apple-touch-icon" href="logo.png" />
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta http-equiv="Content-Language" content="zh-CN" />
+<meta name="viewport" content="width=640" />
+
+<meta name="renderer" content="webkit|ie-comp|ie-stand" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="MobileOptimized" content="320" />
+<meta name="screen-orientation" content="portrait" />
+<meta name="x5-orientation" content="portrait" />
+<meta name="full-screen" content="yes" />
+<meta name="format-detection" content="telephone=no,email=no,adress=no">
+
+<link href="/favicon.ico" rel="shortcut icon" type="image/ico" />
+<link href="/favicon.ico" rel="icon" />
+<link href="/favicon.ico" rel="Bookmark" />
+<link href="/logo.png" rel="apple-touch-icon"/>
+
+
+<meta itemprop="url" property="og:url" content="https://www.yunduanhuisuo.com/?share" />
+<meta itemprop="name" property="og:title" content="云端会所APP" />
+<meta itemprop="image" property="og:image" content="/logo.png?20200422" />
+<meta itemprop="description" property="og:description" content="云端会所APP客户端支持iPhone苹果iOS、安卓apk，线上选佳丽、线下见美女，7000万用户共同选择！" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="云端会所App官网" />
+<meta name="twitter:description" content="云端会所APP客户端支持iPhone苹果iOS、安卓apk，线上选佳丽、线下见美女，7000万用户共同选择！" />
+<meta name="twitter:image" content="logo.png" />
+
+<meta property="og:title" content="云端会所App官网" />
+<meta property="og:description" content="云端会所APP客户端支持iPhone苹果iOS、安卓apk，线上选佳丽、线下见美女，7000万用户共同选择！" />
+<meta property="og:image" content="logo.png" />
+<meta property="og:image:secure_url" content="logo.png" />
+
+
+<link rel="stylesheet" href="./resource/m.css?20200422" />
+
+<script src="./resource/clipboard.min.js?20200422"></script>
+
+<script type="text/javascript" charset="utf-8" src="https://res.cdn.openinstall.io/openinstall.js"></script>
+<script type="text/javascript">
+    //openinstall初始化时将与openinstall服务器交互，应尽可能早的调用
+  /*web页面向app传递的json数据(json string/js Object)，应用被拉起或是首次安装时，通过相应的android/ios api可以获取此数据*/
+  var data = OpenInstall.parseUrlParams();//openinstall.js中提供的工具函数，解析url中的所有查询参数
+  new OpenInstall({
+    /*appKey必选参数，openinstall平台为每个应用分配的ID*/
+    appKey : "gnrwcv",
+    /*可选参数，自定义android平台的apk下载文件名，只有apk在openinstall托管时才有效；个别andriod浏览器下载时，中文文件名显示乱码，请慎用中文文件名！*/
+    //apkFileName : '',
+    /*可选参数，是否优先考虑拉起app，以牺牲下载体验为代价*/
+    //preferWakeup:true,
+    /*自定义遮罩的html*/
+        //mask:function(){
+        //  return "<div id='openinstall_shadow' style='position:fixed;left:0;top:0;background:rgba(0,255,0,0.5);filter:alpha(opacity=50);width:100%;height:100%;z-index:10000;'></div>"
+        //},
+        /*openinstall初始化完成的回调函数，可选*/
+    onready : function() {
+      var m = this, button = document.getElementById("downloadButton");
+      button.style.visibility = "visible";
+
+      /*在app已安装的情况尝试拉起app*/
+      m.schemeWakeup();
+      /*用户点击某个按钮时(假定按钮id为downloadButton)，安装app*/
+      button.onclick = function() {
+        m.wakeupOrInstall();
+        return false;
+      }
+
+
+      var m2 = this, button_ios = document.getElementById("downloadButton_ios");
+      button_ios.style.visibility = "visible";
+
+      /*在app已安装的情况尝试拉起app*/
+      m2.schemeWakeup();
+      /*用户点击某个按钮时(假定按钮id为downloadButton)，安装app*/
+      button_ios.onclick = function() {
+        m2.wakeupOrInstall();
+        return false;
+      }
+
+      
+    }
+  }, data);
+
+</script>
+
+<script>
+var channel = location.search;
+(window.mobileUtil = (function (i, e) {
+  var t = navigator.userAgent,
+    n = /android|adr/gi.test(t),
+    a = /iphone|ipod|ipad/gi.test(t) && !n,
+    r = n || a;
+  return {
+    isAndroid: n,
+    isIos: a,
+    isMobile: r,
+    fixScreen: function () {
+      function t(i) {
+        return (
+          "initial-scale=" +
+          i +
+          ",maximum-scale=" +
+          i +
+          ",minimum-scale=" +
+          i
+        );
+      }
+      var n = e.querySelector('meta[name="viewport"]'),
+        a = n ? n.content : "",
+        d = a.match(/initial\-scale=([\d\.]+)/),
+        o = a.match(/width=([^,\s]+)/);
+      if (r && !d && o && "device-width" != o[1]) {
+        var c = parseInt(o[1]),
+          s = i.innerWidth || c,
+          m = i.screen.width || s,
+          l = m / c;
+        n.content = a + ",target-densitydpi=device-dpi," + t(l);
+      }
+    }
+  };
+})(window, document)),
+mobileUtil.fixScreen();
+</script>
+
+<!-- <script>
+if (!mobileUtil.isMobile) {
+  window.location.href =
+    "/download" + channel;
+}
+</script> -->
+
+<style>
+.ios_super {
+  top: 592px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.backhome{
+  /*display: flex;*/
+  bottom: 10px;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  text-align: center;
+}
+</style>
+
+</head>
+
+<body>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="page page-1 swiper-slide swiper-slide-active">
+        <div class="shadow" style="height:100%;background: rgba(0,0,0,0.3);"></div>
+        <div class="logo"></div>
+        <div class="subtitle"></div>
+        <a href="download.html" class="download-link ios" id="downloadButton_ios" data-clipboard-text="DY8888#zcxzz#01"></a>
+        <!-- <a href="https://www.cav.ooo/" class="download-link ios_super"><img src="./resource/m_wap_ios_super.png?20200422"></a> -->
+        <a href="javascript:void(0);" class="download-link android" id="downloadButton" data-clipboard-text="DY8888#zcxzz#01"></a>
+        <p class="tips">友情提示：苹果用户下载APP，请使用苹果自带的Safari浏览器打开网址，避免APP无法下载！
+          <br><a href="https://www.YunDuanHuiSuo.COM/?from=luodiye" target="_blank" style="color: yellow">https://YunDuanHuiSuo.COM</a>
+          <br><a href="https://www.YDHS.APP/?from=luodiye" target="_blank" style="color: yellow">https://YDHS.APP</a>
+        </p>
+        <a href="https://lynnconway.me/YunDuanHuiSuo" target="_blank" class="contact_us1"><img src="./resource/potato.png?20200422">加入Potato</a>
+        <a href="https://t.me/yunduanhuisuo" target="_blank" class="contact_us2"><img src="./resource/telegram.png?20200422">联系Telegram</a>
+      </div>
+    </div>
+    <div class="backhome">
+      <a href="https://gitee.com/ydhs/ydhs.app/blob/master/README.md" target="_blank" title="云端会所回家地址"><img src="./resource/backhome.gif?20200422" title="云端会所回家地址"></a>
+    </div>
+  </div>
+
+  <script src="./resource/jquery.min.js?20200422"></script>
+
+  <!-- <script>
+    /*判断客户端*/
+    function m_checkClient()
+    {
+      let client = '';
+      if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {  //判断iPhone|iPad|iPod|iOS
+        client = 'iOS';
+      } else if (/(Android)/i.test(navigator.userAgent)) {  //判断Android
+        client = 'Android';
+      } else {
+        client = 'PC';
+      }
+      return client;
+    }
+    //判断是否为ios手机-展示不同下载图标
+    var _m_checkClient = m_checkClient();
+    if(_m_checkClient == "iOS"){
+      $('.android').hide();
+    }else if(_m_checkClient == "Android"){
+      $('.ios').hide();
+      $('.ios_super').hide();
+    }else{
+
+    }
+
+    //处理下载
+    function doDownload(type,obj)
+  {
+
+      if(type=='ios'){
+        if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+          window.location.href="itms-services://?action=download-manifest&amp;url=https://ydhs.oss-cn-hongkong.aliyuncs.com/manifest.plist";
+          alert('应用将自动安装,请到桌面查看!');
+        }else{
+          alert('当前手机不支持苹果应用安装!');
+        }
+      }else{
+        if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+          alert('当前手机不支持Android应用安装!');
+        }else{
+          window.location.href="https://at.umtrack.com/WzCaCq?cid=22987&clickid={{clickid}}";
+        }
+      }
+
+  }
+
+  </script> -->
+  
+  <script>
+    var clipboard = new ClipboardJS('.download-link');
+    clipboard.on('success', function(e) {
+    });
+    clipboard.on('error', function(e) {
+    });
+  </script>
+
+<!-- cnzz统计 -->
+<script type="text/javascript">document.write(unescape("%3Cspan style='display:none' id='cnzz_stat_icon_1278834492'%3E%3C/span%3E%3Cscript src='https://v1.cnzz.com/z_stat.php%3Fid%3D1278834492' type='text/javascript'%3E%3C/script%3E"));</script>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>{{.ListName}}免费视频在线观看_{{.Site.SiteTitle}}</title>
+<meta name="keywords" content="{{.ListName}},{{.ListName}}在线观看,{{.ListName}}免费视频,{{.ListName}}影视大全,{{ .Site.SiteKeywords }}" />
+<meta name="description" content="{{.ListName}}免费视频在线观看,{{ .Site.SiteDescription }}" />
+<meta name="applicable-device" content="pc,mobile" />
+<meta name="robots" content="index,follow" />
+<meta http-equiv="Cache-Control" content="no-transform" /> 
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<link rel="alternate" media="only screen and (max-width: 640px)" href="https://{{.Site.SiteUrl}}/" />
+<link rel="alternate" media="handheld" href="https://{{.Site.SiteUrl}}/" />
+<meta http-equiv="mobile-agent" content="format=html5; url=https://{{.Site.SiteUrl}}/" />
+<meta name="mobile-agent" content="format=[wml|xhtml|html5]; url=https://{{.Site.SiteUrl}}/" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="apple-mobile-web-app-title" content="{{ .Site.SiteTitle }}" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-itunes-app" content="app-id=5697068241111" />
+
+<meta name="apple-mobile-web-app-title" content="{{ .Site.SiteTitle }}" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-itunes-app" content="app-id=5697068241111" />
+<meta name="apple-touch-fullscreen" content="yes" />
+
+<meta name="renderer" content="webkit" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="MobileOptimized" content="320" />
+<meta name="screen-orientation" content="portrait" />
+<meta name="x5-orientation" content="portrait" />
+<meta name="full-screen" content="yes" />
+<meta name="format-detection" content="telphone=no" />
+
+<link href="/favicon.ico" rel="shortcut icon" type="image/ico" />
+<link href="/favicon.ico" rel="icon" />
+<link href="/favicon.ico" rel="Bookmark" />
+<link rel="apple-touch-icon" href="/logo.png">
+
+<meta property="og:type" content="video" />
+<meta property="og:title" content="{{.Video.VodName}}" />
+<meta property="og:description" content="{{.Video.VodName}}视频免费在线观看,{{ .Site.SiteDescription }}" />
+<meta property="og:url" content="{{.play}}" /> 
+<meta property="og:image" content="{{.Video.VodPic}}" /> 
+<meta property="og:video" content="{{M3u8Url .Video}}" />
+<meta property="og:video:duration" content="1:{{.Video.VodTime | date "m:d"}}" />
+<meta property="og:video:pix" content="4"/>
+<meta property="og:video:release_date" content="{{.Video.VodTime | date "Y-m-d"}}" />
+<meta property="og:video:actor" content="视频演员" />
+<meta property="og:video:director" content="视频导演" />
+
+<meta name="revisit-after" content="1 days" />
+
+		<link rel="stylesheet" href="{{.StylePath}}/css/swiper.min.css">
+		<link rel="stylesheet" href="{{.StylePath}}/css/Joe-red.css">
+		<script type="text/javascript" src="{{.StylePath}}/js/jquery.min.js"></script>
+		<script type="text/javascript" src="{{.StylePath}}/js/leeleo.js"></script>
+		<script type="text/javascript" src="{{.StylePath}}/js/font_534891_k48jbptqzuayvi.js"></script>
+		<script src="{{.StylePath}}/js/home.js"></script>
+		<link href="{{.StylePath}}/css/apppp.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<div class="channel">
+			{{include "style2/m/header.html" .}}
+			<div class="detail">
+				<div class="detail-wrap" style="padding: 0px;">
+					{9CCMS:$Play}
+				</div>
+			</div>
+			{9CCMS-DCAd}
+				<li style="list-style: none;"><a target="_blank"  href="{9CCMS-DCAd:Url}"><img style="width:{9CCMS-DCAd:Width};height:{9CCMS-DCAd:Height};margin-bottom:2px;" src="{9CCMS-DCAd:Pic}"></a></li> 
+			{/9CCMS-DCAd}
+			<section class="mod margin-t-15">
+					<div class="mod-head clearfix">
+						<div class="mod-head-title">
+						    <span class="mod-head-name"><svg class="icon" aria-hidden="true" style="font-size: 1.6rem;margin:0 0 0 -.1rem">
+			                <use xlink:href="#icon-wodezhuifan"></use>
+			                </svg>猜你喜欢</span>
+						</div>
+					</div>
+					<div class="mod-main clearfix">
+						<div class="mod-row">
+							<ul class="video-list video-film-list clearfix">
+									{9CCMS-Video-Popular:Count=30}
+									<li class="video-item" tapmode="" onclick="showDefault('loading')">
+										<a class="video-link" href="{9CCMS-Video-Popular:DUrl}" title="{9CCMS-Video-Popular:Name}">
+											<div class="v-pic">
+												<img data-src="{9CCMS-Video-Popular:Pic}" class="_item-pic _item-lazy" alt="{9CCMS-Video-Popular:Name}" src="{9CCMS-Video-Popular:Pic}">
+												<?php if(rand(0 ,1)){ ?>
+												<div class="video-tips red">推荐</div>
+												<?php } ?>
+												<a href="{9CCMS-Video-Popular:DUrl}" title="{9CCMS-Video-Popular:Name}" class="v-playBtn"><i></i></a>
+											</div>
+											<div class="video-con">
+												<h2 class="video-con-tit ellipsis-1">{9CCMS-Video-Popular:Name}</h2>
+											</div>
+										</a>
+									</li>
+									{/9CCMS-Video-Popular}
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+		</div>
+		<div id="_js_goTop" class="goTop" onclick="goTop()"><i class="iconfont icon-fold"></i></div>
+		{{include "style2/m/footer.html" .}}
+	</body>
+</html>

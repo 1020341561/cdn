@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="Cache-Control" content="no-siteapp">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="renderer" content="webkit">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,minimal-ui">
+		<title>{9CCMS:$WebTitle}分类{9CCMS-Book-List:Title}在线小说列表页面</title>
+		<meta name="keywords" content="{9CCMS:$WebKeywords},{9CCMS-Book-List:Title}" />
+		<meta name="description" content="{9CCMS:$WebDescription},{9CCMS-Book-List:Title}" />
+		<meta name="author" content="muqiao">
+
+		<link rel="stylesheet" href="{9CCMS:$StylePath}/css/swiper.min.css">
+		<link rel="stylesheet" href="{9CCMS:$StylePath}/css/Joe-red.css">
+		<script type="text/javascript" src="{9CCMS:$StylePath}/js/jquery.min.js"></script>
+		<script type="text/javascript" src="{9CCMS:$StylePath}/js/leeleo.js"></script>
+		<script type="text/javascript" src="{9CCMS:$StylePath}/js/font_534891_k48jbptqzuayvi.js"></script>
+		<script src="{9CCMS:$StylePath}/js/home.js"></script>
+		<link href="{9CCMS:$StylePath}/css/apppp.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<div class="channel">
+			{9CCMS-include:Header}
+			<section class="mod margin-t-15" style="margin-top:0rem;">
+				<div class="mod-head clearfix">
+					<div class="mod-head-title">
+						<span class="mod-head-name"><svg class="icon" aria-hidden="true" style="font-size: 1.6rem;margin:0 0 0 -.1rem">
+								<use xlink:href="#icon-fanjutuijian"></use>
+							</svg>随机小说推荐</span>
+					</div>
+					<a class="change"><span class="iconfont icon-location"></span>&nbsp;可以左右滑动哦</a>
+				</div>
+				<div class="mod-main clearfix">
+					<div class="mod-row">
+						<div class="videoSelectWrap swiper-container-horizontal swiper-container-free-mode swiper-container-android"
+						 style="overflow: hidden;">
+							<ul class="video-list swiper-wrapper video-sScroll-list clearfix">
+								{9CCMS-Book-Popular:Count=8}
+								<li class="swiper-slide video-item swiper-slide-active" tapmode="" onclick="showDefault('loading')">
+									<a class="video-link" href="/?m=book_detail*<?php echo $MYSQLVODs[a_id] ?>*<?php echo $MYSQLVODs[a_type] ?>" title="{9CCMS-Book-Popular:Name}">
+										<div class="_item-pic swiper-lazy swiper-lazy-loaded" style="background-image: url({9CCMS-Book-Popular:Pic});">
+											<?php if(rand(0,1)){ ?>
+											<div class="video-tips red">推荐</div>
+											<?php } ?>
+											<div class="video-duration"></div>
+										</div>
+										<div class="video-con">
+											<h2 class="video-con-tit ellipsis-1">{9CCMS-Book-Popular:Name}</h2>
+										</div>
+									</a>
+								</li>
+								{/9CCMS-Book-Popular}
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="mod margin-t-15">
+					<div class="screenList">
+						<div class="box">
+							<div class="nav-wrap">
+								<div id="screenList1" class="wrap swiper-container-horizontal swiper-container-free-mode swiper-container-android">
+									<ul class="swiper-wrapper clearfix">
+			                            <li class="swiper-slide" onclick="showDefault('loading')"><a>分类：</a></li>
+										<?php  $types = array();$vodtype=(array)$this->value['vodtype'];$pid = $vodtype[$this->value['typeId']]['type'];for($i = 0 ; $i < count($vodtype) ; $i++){if($vodtype[$i]['type'] === $pid){array_push($types,$vodtype[$i]);}}for($x=0;$x<count($types);$x++){ if($types[$x]['name'] != '复位字符') { ?>
+										<li class="swiper-slide <?php echo $types[$x]['id'] === $this->value['typeId'] ? 'active swiper-slide-active' : '' ?>" onclick="showDefault('loading')">
+											<a href="/?m=<?php  echo $types[$x]['type'] ?>_list*<?php  echo $types[$x]['id'] ?>*1"><?php  echo $types[$x]['name'] ?></a>
+										</li>
+										<?php }  } ?>
+									</ul>
+								</div>
+							</div>				
+						</div>
+					</div>
+				</section>
+			<section class="mod ">
+				<div class="mod-head clearfix">
+					<div class="mod-head-title">
+						<span class="mod-head-name">
+							<svg class="icon" aria-hidden="true">
+								<use xlink:href="#icon-zhibo"></use>
+							</svg>
+							{9CCMS-Book-List:Title}
+						</span>
+					</div>
+				</div>
+				<div class="mod-main clearfix">
+					<div class="mod-row">
+						<ul class="video-list video-film-list clearfix">
+							{9CCMS-Book-List:Count=30}
+							<li class="video-item" tapmode="" onclick="showDefault('loading')">
+								<a class="video-link" href="{9CCMS-Book-List:DUrl}" title="{9CCMS-Book-List:Name}">
+									<div class="v-pic">
+										<img data-src="{9CCMS-Book-List:Pic}" class="_item-pic _item-lazy" alt="{9CCMS-Book-List:Name}" src="{9CCMS-Book-List:Pic}">
+										<?php if(rand(0 ,1)){ ?>
+										<div class="v-tips">推荐</div>
+										<?php } ?>
+										<a href="{9CCMS-Book-List:DUrl}" title="{9CCMS-Book-List:Name}" class="v-playBtn"><i></i></a>
+									</div>
+									<div class="video-con">
+										<h2 class="video-con-tit ellipsis-1">{9CCMS-Book-List:Name}</h2>
+									</div>
+								</a>
+							</li>
+							{/9CCMS-Book-List}
+						</ul>
+					</div>
+				</div>
+			</section>
+		</div>
+		<section class="pag-warp clearfix" tapmode="" onclick="showDefault('loading')">
+			<a target="_self" href="{9CCMS-Book-List:PageUrl}" class="pagelink_a">首页</a>&nbsp;
+			<a target="_self" href="{9CCMS-Book-List:prevUrl}" class="pagelink_a">上一页</a>&nbsp;
+			<a target="_self" href="{9CCMS-Book-List:nextUrl}" class="pagelink_a">下一页</a>&nbsp;
+			<a target="_self" href="{9CCMS-Book-List:totalUrl}" class="pagelink_a">尾页</a>&nbsp;
+		</section>
+		<div id="_js_goTop" class="goTop" onclick="goTop()"><i class="iconfont icon-fold"></i></div>
+		{9CCMS-include:Footer}
+	</body>
+</html>

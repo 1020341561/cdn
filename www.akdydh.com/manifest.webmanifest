@@ -1,0 +1,52 @@
+{
+  "name": "YouTube Music",
+  "prefer_related_applications": false,
+  "short_name": "YT Music",
+  "related_applications": [
+    {
+      "id": "com.google.android.apps.youtube.music",
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.music"
+    },
+    {
+      "platform": "itunes",
+      "url": "https://itunes.apple.com/app/apple-store/id1017492454?mt=8&pt=9008"
+    }
+  ],
+  "theme_color": "#131313",
+  "start_url": "/?source=pwa",
+  "display": "standalone",
+  "icons": [
+    {
+      "sizes": "48x48",
+      "src": "https://www.gstatic.com/youtube/media/ytm/images/applauncher/music_icon_48x48.png",
+      "type": "image/png"
+    },
+    {
+      "sizes": "72x72",
+      "src": "https://www.gstatic.com/youtube/media/ytm/images/applauncher/music_icon_72x72.png",
+      "type": "image/png"
+    },
+    {
+      "sizes": "96x96",
+      "src": "https://www.gstatic.com/youtube/media/ytm/images/applauncher/music_icon_96x96.png",
+      "type": "image/png"
+    },
+    {
+      "sizes": "144x144",
+      "src": "https://www.gstatic.com/youtube/media/ytm/images/applauncher/music_icon_144x144.png",
+      "type": "image/png"
+    },
+    {
+      "sizes": "192x192",
+      "src": "https://www.gstatic.com/youtube/media/ytm/images/applauncher/music_icon_192x192.png",
+      "type": "image/png"
+    },
+    {
+      "sizes": "512x512",
+      "src": "https://www.gstatic.com/youtube/media/ytm/images/applauncher/music_icon_512x512.png",
+      "type": "image/png"
+    }
+  ],
+  "background_color": "#000000"
+}

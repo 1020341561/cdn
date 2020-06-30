@@ -1,0 +1,91 @@
+<!DocType html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+		<title>{9CCMS:$WebTitle}-{9CCMS:$ListName}-{9CCMS:$Name}视频介绍</title>
+		<meta name="keywords" content="{9CCMS:$WebKeywords},{9CCMS:$ListName},{9CCMS:$Name}" />
+		<meta name="description" content="{9CCMS:$WebDescription},{9CCMS:$ListName},{9CCMS:$Name}" />
+		<link href="{9CCMS:$StylePath}/css/style.css" rel="stylesheet">
+		<link href="{9CCMS:$StylePath}/css/style2.css" rel="stylesheet">
+		<meta name="theme-color" content="#ffffff">
+		<style>
+			.title {
+            font-size: 20px;
+            color: #222222;
+            margin-bottom: 5px;
+        }
+
+        .title-box {
+            border-bottom: 1px solid #ff8000;
+        }
+
+        .pagenation a {
+            color: black;
+        }
+
+        .pagenation a:hover {
+            color: ff8000;
+            text-decoration: none;
+        }
+    </style>
+	</head>
+
+	<body data-host="221" class="list hd" data-uid="">
+		{9CCMS-include:Header}
+		<div class="alert alert-default text-center " style="margin:10px 4px 0 4px;padding:0" id="domaintip">
+			<div class="dropdown">{9CCMS:$Name}</div>
+		</div>
+		<div style="height:auto;" align="center">
+			<img src="{9CCMS:$Pic}" style="max-height: 100%; max-width: 100%;margin: 0 auto;">
+		</div>
+		<div style="width: 100%;background-color: #1CB99E;height: 60px;padding: 10px 40px;">
+			<style type="text/css">
+				.goPlay{
+					border-radius: 20px;
+					padding: 8px 20px;
+					line-height: 40px;
+					font-size: 15px;
+					color: #FFF;
+					border: 1px solid #ccc!important;
+				}
+			</style>
+			<a class="goPlay" href="{9CCMS:$CUrl}">在线播放</a>
+			<a class="goPlay" style="margin-left: 20px;" href="{9CCMS:$CUrl}">备用线路</a>
+		</div>
+		{9CCMS-DCAd}
+			<li style="list-style-type:none">
+				<a target="_blank"  href="{9CCMS-DCAd:Url}">
+					<img style="width:{9CCMS-DCAd:Width};height:{9CCMS-DCAd:Height};margin-bottom:2px;" src="{9CCMS-DCAd:Pic}">
+				</a>
+			</li> 
+		{/9CCMS-DCAd}
+		<div class="alert alert-default text-center " style="margin:10px 4px 0 4px;padding:0" id="domaintip">
+			<div class="dropdown">
+				同类推荐
+			</div>
+		</div>
+		{9CCMS-Video-Popular:Count=20}
+		<div class="video" id="v_VuHKbdWnH2">
+			<a href="{9CCMS-Video-Popular:DUrl}">
+				<div class="vimg">
+					<img src="{9CCMS-Video-Popular:Pic}">
+					<span class="vlen">更新时间： <?php echo date('Y-m-d',strtotime($MYSQLVODs['d_time'])) ?>
+					</span>
+					<?php if(rand(0 ,1)) {?>
+					<span class="icon_promote icon_promote_right" style="width:100%;height:100%">
+						<span>站长推荐</span>
+					</span>
+					<?php } ?>
+				</div>
+				<p class="title"><span class="glyphicon glyphicon-hd-video" style="color:#337ab7"></span>
+					{9CCMS-Video-Popular:Name} </p>
+			</a>
+		</div>
+		{/9CCMS-Video-Popular}
+		{9CCMS-include:Footer}
+	</body>
+
+</html>
